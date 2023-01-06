@@ -1,0 +1,18 @@
+.ui-kit {
+
+    &__title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    &__block {
+        margin-top: 10px;
+    }
+    
+    & pre {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: $grey-light;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,162 @@
+@import "../utils/color.scss";
+@import "../utils/fonts.scss";
+@import "../utils/variables.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: Arial,sans-serif;
+}
+
+html,
+body {
+  padding: 0 calc(var(--wScroll) - (100vw - 100%)) 0 0;
+
+  scrollbar-width: var(--scrollbarWidth);
+  scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+    border-radius: var(--scrollbarBorderRadius);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html.touch *:hover {
+    all: unset !important;
+  }
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+dd,
+dt {
+  margin: 0;
+}
+
+input {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: $black;
+  height: 100%;
+  min-height: 100vh;
+  background: $white;
+  min-width: 375px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+main {
+  flex: 1;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button {
+  touch-action: manipulation;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  transition: color 0.3s ease-in-out;
+  touch-action: manipulation;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+button {
+  padding: 0;
+  border-style: solid;
+  border: none;
+}
+
+svg {
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+textarea,
+label {
+  outline: none;
+  transition: all 0.3s;
+}
+
+textarea {
+  resize: none;
+}
+
+p {
+  margin: 0;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.um-title-1 {
+  
+}
+
+.um-title-2 {
+  
+}

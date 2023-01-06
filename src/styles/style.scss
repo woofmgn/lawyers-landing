@@ -1,0 +1,14 @@
+@import "utils/libs";
+@import "utils/fonts";
+
+@import "./common/general.scss";
+@import "./common/um-container.scss";
+@import "./common/um-header.scss";
+@import "./common/um-footer.scss";
+@import "./common/um-btn.scss";
+@import "./common/um-input";
+@import "./common/um-notify";
+@import "./common/um-popup";
+@import "./common/um-overflow";
+
+@import "./ui-kit/ui-kit.scss"; // TODO: Удалить перед сборкой

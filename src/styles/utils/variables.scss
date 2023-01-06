@@ -1,0 +1,16 @@
+:root {
+  --app-height: 100%;
+  --header-height: 80px;
+
+  --scrollbarBg: #fff;
+  --scrollbarThumb: #000;
+  --scrollbarWidth: 7px;
+  --scrollbarBorder: none;
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+
+  @media screen and (max-width: 767px) {
+    --header-height: 60px;
+  }
+}
+
+$defaultTransition: all .3s ease-in-out;

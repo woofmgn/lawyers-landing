@@ -1,0 +1,14 @@
+.um-btn {
+    
+    &:active {
+        
+    }
+
+    @media (hover: hover) {
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            
+        }
+    }
+}

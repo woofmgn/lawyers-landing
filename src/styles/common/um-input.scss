@@ -1,0 +1,13 @@
+.um-input {
+
+    &.is-empty {
+
+    }
+
+    &.is-error {
+
+        & .um-input__error {
+            display: block;
+        }
+    }
+}

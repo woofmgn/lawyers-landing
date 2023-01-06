@@ -1,0 +1,23 @@
+.um-popup {
+    position: fixed;
+    max-height: 100vh;
+    bottom: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,100%);
+    z-index: 150;
+    pointer-events: none;
+    transition: $defaultTransition;
+
+    &.is-visible {
+        opacity: 1;
+        transform: translate(-50%,50%);
+        pointer-events: all;
+    }
+
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+}
