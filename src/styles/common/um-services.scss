@@ -1,0 +1,76 @@
+.um-services {
+    margin-top: 60px;
+    padding-bottom: 61px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        padding-bottom: 12px;
+        font-family: $family;
+        font-weight: 800;
+        font-size: 39px;
+        line-height: 125%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        padding-bottom: 38px;
+        max-width: 647px;
+        font-family: $family;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+    }
+
+    &__card-list {
+        display: flex;
+        gap: 35px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 390px;
+        background-color: #15171C;
+        box-shadow: 0px 8px 41px #000000, 0px 8px 29px #000000;
+    }
+
+    &__card-title {
+        margin: 38px 0 9px;
+        max-width: 340px;
+        font-family: $family;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 133.5%;
+        text-align: center;
+    }
+
+    &__card-description {
+        margin-bottom: 28px;
+        max-width: 340px;
+        font-family: $family;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: center;
+    }
+
+    &__card-button {
+        padding: 19px 40px 18px;
+        margin-bottom: 50px;
+        background-color: $orange;
+        color: $black;
+        font-family: $family;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
