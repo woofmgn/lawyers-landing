@@ -1,0 +1,70 @@
+@media screen {
+  
+}
+
+.um-promo {
+    width: 100%;
+    height: 616px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../../img/promo/promo.png);
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: top; 
+    // background-size: contain;
+    // overflow: hidden;
+    // background-size: 100% 100%;
+    
+  &__image {
+
+  }
+
+  &__title-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 1098px;
+      width: 100%;
+      background: linear-gradient(90deg, #15171C 26.75%, rgba(21, 23, 28, 0.942308) 42.83%, rgba(21, 23, 28, 0.76) 71.71%, rgba(21, 23, 28, 0.15) 83.38%, rgba(21, 23, 28, 0) 95.45%);
+  }
+
+  &__about {
+      max-width: 519px;
+      margin: 105px auto 18px 340px;
+      font-family: $family;
+      font-weight: $bold;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $orange;
+  }
+
+  &__title {
+    margin: 0 auto 16px 340px;
+    max-width: 531px;
+    font-family: $family;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 125%;
+    color: $white;
+    
+  }
+
+  &__description {
+      max-width: 519px;
+      margin-left: 340px;
+      font-family: $family;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 160%;
+      color: #FFFFFF;
+  }
+
+  &__cover {
+      display: flex;
+      width: calc(100% - 1270px);
+      height: 616px;
+      background: linear-gradient(90deg, #15171C 9.15%, rgba(21, 23, 28, 0.95) 23.96%, rgba(21, 23, 28, 0.81) 42.15%, rgba(21, 23, 28, 0.67) 60.57%, rgba(21, 23, 28, 0) 77.32%);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}

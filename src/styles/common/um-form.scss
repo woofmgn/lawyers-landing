@@ -1,0 +1,40 @@
+.um-form {
+    max-width: 518px;
+
+  &__input {
+      width: 100%;
+      margin-bottom: 23px;
+      padding-left: 20px;
+      height: 57px;
+      border: 1.5px solid $black;
+      font-family: $family;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $black;
+      opacity: 0.4;
+
+  }
+
+  &__button-submit {
+      width: 100%;
+      padding: 19px 204.32px 18px 204.31px;
+      margin-bottom: 15px;
+      font-family: $family;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: $black;
+      background-color: $orange;
+  }
+
+  &__accept-terms  {
+      font-family: 'Geometria';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      color: $black;
+  }
+}

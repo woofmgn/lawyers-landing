@@ -1,0 +1,40 @@
+.um-consultation {
+    padding: 61px 0 63px;
+    background-color: $white;
+
+  &__container {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__wrapper {
+    max-width: 647px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__title {
+      font-family: $family;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 125%;
+      color: $black;
+  }
+
+  &__description {
+      font-family: $family;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: $black;
+  }
+
+  &__contacts {
+      font-family: $family;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 160%;
+      color: $black;
+  }
+}
