@@ -1,3 +1,38 @@
 .um-footer {
-    
+
+    &__logo {
+      max-width: 59px;
+    }
+
+    &__container {
+      height: 72px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrapper {
+      max-width: 546px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__user-accept {
+        font-family: $family;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
+    }
+
+    &__uralmedias {
+        font-family: $family;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
+    }
 }
