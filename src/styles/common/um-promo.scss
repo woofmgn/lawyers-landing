@@ -9,11 +9,35 @@
     justify-content: space-between;
     background-image: url(../../img/promo/promo.png);
     background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // background-position: top; 
-    // background-size: contain;
-    // overflow: hidden;
-    // background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: " ";
+      display: block;
+      width: 55%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: linear-gradient(90deg, #15171C 26.75%, rgba(21, 23, 28, 0.942308) 42.83%, rgba(21, 23, 28, 0.76) 71.71%, rgba(21, 23, 28, 0.15) 83.38%, rgba(21, 23, 28, 0) 95.45%);
+    }
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 33%;
+      height: 616px;
+      background: linear-gradient(90deg, #15171C 9.15%, rgba(21, 23, 28, 0.95) 23.96%, rgba(21, 23, 28, 0.81) 42.15%, rgba(21, 23, 28, 0.67) 60.57%, rgba(21, 23, 28, 0) 77.32%);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      z-index: 2;
+    }
     
   &__image {
 
@@ -22,14 +46,11 @@
   &__title-container {
       display: flex;
       flex-direction: column;
-      max-width: 1098px;
-      width: 100%;
-      background: linear-gradient(90deg, #15171C 26.75%, rgba(21, 23, 28, 0.942308) 42.83%, rgba(21, 23, 28, 0.76) 71.71%, rgba(21, 23, 28, 0.15) 83.38%, rgba(21, 23, 28, 0) 95.45%);
   }
 
   &__about {
       max-width: 519px;
-      margin: 105px auto 18px 340px;
+      margin: 105px auto 18px 0;
       font-family: $family;
       font-weight: $bold;
       font-size: 16px;
@@ -37,34 +58,27 @@
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: $orange;
+      z-index: 3;
   }
 
   &__title {
-    margin: 0 auto 16px 340px;
+    margin: 0 auto 16px 0;
     max-width: 531px;
     font-family: $family;
     font-weight: 800;
     font-size: 55px;
     line-height: 125%;
     color: $white;
-    
+    z-index: 3;
   }
 
   &__description {
       max-width: 519px;
-      margin-left: 340px;
       font-family: $family;
       font-weight: normal;
       font-size: 20px;
       line-height: 160%;
       color: #FFFFFF;
-  }
-
-  &__cover {
-      display: flex;
-      width: calc(100% - 1270px);
-      height: 616px;
-      background: linear-gradient(90deg, #15171C 9.15%, rgba(21, 23, 28, 0.95) 23.96%, rgba(21, 23, 28, 0.81) 42.15%, rgba(21, 23, 28, 0.67) 60.57%, rgba(21, 23, 28, 0) 77.32%);
-      transform: matrix(-1, 0, 0, 1, 0, 0);
+      z-index: 3;
   }
 }
