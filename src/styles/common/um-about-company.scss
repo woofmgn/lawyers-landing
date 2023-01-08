@@ -1,0 +1,30 @@
+.um-about-company  {
+    margin-bottom: 78px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-family: $family;
+        font-weight: 800;
+        font-size: 39px;
+        line-height: 125%;
+        color: $white;
+    }
+
+    &__description {
+        max-width: 692px;
+        font-family: $family;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: $white;
+    }
+
+    &__image {
+      max-width: 483px;
+      max-height: 370px;
+    }
+}

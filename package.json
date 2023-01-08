@@ -57,9 +57,10 @@
   "dependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
-    "jquery": "^3.6.0",
+    "jquery": "^3.6.3",
     "jquery.maskedinput": "^1.4.1",
     "smoothscroll-for-websites": "^1.4.10",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^8.4.5"
   }
 }

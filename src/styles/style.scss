@@ -1,6 +1,7 @@
 @import "utils/libs";
 @import "utils/fonts";
 
+@import './common/swiper.scss';
 @import "./common/general.scss";
 @import "./common/um-container.scss";
 @import "./common/um-header.scss";
@@ -9,6 +10,8 @@
 @import "./common/um-services.scss";
 @import "./common/um-about-trust.scss";
 @import "./common/um-consultation.scss";
+@import './common/um-team.scss';
+@import './common/um-about-company.scss';
 @import "./common/um-form.scss";
 @import "./common/um-footer.scss";
 @import "./common/um-btn.scss";
@@ -17,4 +20,4 @@
 @import "./common/um-popup";
 @import "./common/um-overflow";
 
-@import "./ui-kit/ui-kit.scss"; // TODO: Удалить перед сборкой
+// @import "./ui-kit/ui-kit.scss"; // TODO: Удалить перед сборкой
