@@ -1,0 +1,60 @@
+.um-sertificate {
+    background-color: $white;
+
+    &__container {
+        padding-top: 65px;
+        padding-bottom: 68px;
+    }
+
+    &__title {
+      margin-bottom: 13px;
+      font-family: $family;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 125%;
+      text-align: center;
+      color: $black;
+    }
+
+    &__subtitle {
+      margin-bottom: 23px;
+      font-family: $family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      text-align: center;
+      color: $black;
+    }
+}
+
+.um-certificate__swiper {
+  height: 322px;
+  margin-bottom: 48px;
+  // position: relative;
+}
+
+.um-certificate__swiper-btn {
+  display: block;
+  width: 59px;
+  height: 59px;
+  color: $orange;
+  background: $white;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.44);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .5;
+  border-radius: 50%;
+
+  &_type_next {
+    background-image: url(../../img/team/next-icon.svg);
+  }
+
+  &_type_prev {
+    background-image: url(../../img/team/prev-icon.svg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

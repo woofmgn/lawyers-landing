@@ -30,8 +30,33 @@
       text-align: center;
   }
 
-  &__about-company {
-      display: flex;
-      justify-content: space-between;
+  &__swiper-btn {
+      display: block;
+      width: 59px;
+      height: 59px;
+      color: $orange;
+      background-color: $black;
+      box-shadow: 0px 8px 27px rgba(0, 0, 0, 0.63);
+      // background-image: url(../../img/team/next-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: .5;
+      border-radius: 50%;
+
+      &_type_next {
+        background-image: url(../../img/team/next-icon.svg);
+      }
+
+      &_type_prev {
+        background-image: url(../../img/team/prev-icon.svg);
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+  }
+
+  &__swiper-pagination {
+    bottom: -66px;
   }
 }
