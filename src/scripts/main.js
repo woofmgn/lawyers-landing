@@ -6,23 +6,41 @@ import { showFieldError } from "./modules/showFieldError.js";
 import { togglePopup } from "./modules/togglePopup.js";
 import { translateHeader } from "./modules/translateHeader.js";
 
-const swiper = new Swiper(".mySwiper", {
+const swiperTeam = new Swiper(".um-team__swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".um-team__swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".um-team__swiper-btn_type_next",
+    prevEl: ".um-team__swiper-btn_type_prev",
   },
 });
 
-swiper.slideNext();
+swiperTeam.slideNext();
+
+const swiperCertificate = new Swiper(".um-certificate__swiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".um-certificate__swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".um-certificate__swiper-btn_type_next",
+    prevEl: ".um-certificate__swiper-btn_type_prev",
+  },
+});
+
+swiperCertificate.slideNext();
 
 document.addEventListener("DOMContentLoaded", function () {
   // Глобальный объект для доступа к функциям извне
