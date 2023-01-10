@@ -41,7 +41,7 @@
         }
 
         &__swiper-pagination {
-          bottom: -46px;
+            bottom: -46px;
         }
     }
 }
@@ -66,52 +66,52 @@
         align-items: center;
     }
 
-  &__title {
-      margin-bottom: 13px;
-      max-width: 542px;
-      font-family: $family;
-      font-weight: 800;
-      font-size: 36px;
-      line-height: 125%;
-      text-align: center;
-  }
+    &__title {
+        margin-bottom: 13px;
+        max-width: 542px;
+        font-family: $family;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 125%;
+        text-align: center;
+    }
 
-  &__subtitle {
-      margin-bottom: 33px;
-      max-width: 865px;
-      font-family:  $family;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 160%;
-      text-align: center;
-  }
+    &__subtitle {
+        margin-bottom: 33px;
+        max-width: 865px;
+        font-family:  $family;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+    }
 
-  &__swiper-btn {
-      display: block;
-      width: 59px;
-      height: 59px;
-      color: $orange;
-      background-color: $black;
-      box-shadow: 0px 8px 27px rgba(0, 0, 0, 0.63);
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: .5;
-      border-radius: 50%;
+    &__swiper-btn {
+        display: block;
+        width: 59px;
+        height: 59px;
+        color: $orange;
+        background-color: $black;
+        box-shadow: 0px 8px 27px rgba(0, 0, 0, 0.63);
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .5;
+        border-radius: 50%;
 
-      &_type_next {
-        background-image: url(../../img/team/next-icon.svg);
-      }
+        &_type_next {
+            background-image: url(../../img/team/next-icon.svg);
+        }
 
-      &_type_prev {
-        background-image: url(../../img/team/prev-icon.svg);
-      }
+        &_type_prev {
+            background-image: url(../../img/team/prev-icon.svg);
+        }
 
-      &:hover {
-        opacity: 1;
-      }
-  }
+        &:hover {
+            opacity: 1;
+        }
+    }
 
-  &__swiper-pagination {
-    bottom: -66px;
-  }
+    &__swiper-pagination {
+        bottom: -66px;
+    }
 }

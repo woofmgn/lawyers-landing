@@ -29,31 +29,31 @@
 }
 
 @media screen and (max-width: 400px) {
-  .um-sertificate {
-      &__container {
-        padding-top: 31px;
-        padding-bottom: 36px;
-      }
+    .um-sertificate {
+        &__container {
+          padding-top: 31px;
+          padding-bottom: 36px;
+        }
 
-      &__title {
-        margin-bottom: 9px;
-        font-size: 28px;
-      }
-  
-      &__subtitle {
-        margin-bottom: 16px;
-        font-size: 16px;
-      }
-  }
+        &__title {
+          margin-bottom: 9px;
+          font-size: 28px;
+        }
+    
+        &__subtitle {
+          margin-bottom: 16px;
+          font-size: 16px;
+        }
+    }
 
-  .um-certificate__swiper {
-      height: 235px;
-      margin-bottom: 28px;
-  }
-  
-  .um-certificate__swiper-btn {
-      visibility: hidden;
-  }
+    .um-certificate__swiper {
+        height: 235px;
+        margin-bottom: 28px;
+    }
+    
+    .um-certificate__swiper-btn {
+        visibility: hidden;
+    }
 }
 
 .um-sertificate {
@@ -87,8 +87,8 @@
 }
 
 .um-certificate__swiper {
-  height: 322px;
-  margin-bottom: 48px;
+    height: 322px;
+    margin-bottom: 48px;
 }
 
 .um-certificate__swiper-btn {
@@ -104,14 +104,14 @@
     border-radius: 50%;
 
     &_type_next {
-      background-image: url(../../img/team/next-icon.svg);
+        background-image: url(../../img/team/next-icon.svg);
     }
 
     &_type_prev {
-      background-image: url(../../img/team/prev-icon.svg);
+        background-image: url(../../img/team/prev-icon.svg);
     }
 
     &:hover {
-      opacity: 1;
+        opacity: 1;
     }
 }
