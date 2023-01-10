@@ -1,3 +1,99 @@
+@media screen and (max-width: 1280px) {
+  .um-services {
+      &__card-description {
+          margin: 0 25px 27px;
+      }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .um-services {
+        &__card-list {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+
+        &__item {
+            width: calc(51% - 20px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .um-services {
+        margin-top: 50px;
+        padding-bottom: 56px;
+
+        &__item {
+            padding-bottom: 47px;
+        }
+
+        &__title {
+            padding-bottom: 13px;
+            font-size: 35px;
+            line-height: 130%;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+
+        &__card-title {
+            margin: 30px 0 6px;
+        }
+
+        &__card-description {
+            font-size: 16px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .um-services {
+      margin-top: 35px;
+      padding-bottom: 37px;
+
+      &__item {
+          padding-bottom: 28px;
+      }
+
+      &__title {
+          padding-bottom: 10px;
+          font-size: 31px;
+      }
+
+      &__subtitle {
+          font-size: 16px;
+          padding-bottom: 23px;
+      }
+
+      &__card-title {
+          margin: 19px 0 4px;
+          font-size: 23px;
+          line-height: 125%;
+      }
+
+      &__card-description {
+          font-size: 14px;
+          line-height: 165%;
+          margin-right: 14px;
+      }
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .um-services {
+        &__item {
+          width: 100%;
+        }
+    }
+}
+
 .um-services {
     margin-top: 60px;
     padding-bottom: 61px;
@@ -8,7 +104,14 @@
         align-items: center;
     }
 
+    &__item-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__title {
+        margin: 0 25px;
         padding-bottom: 12px;
         font-family: $family;
         font-weight: 800;
@@ -37,6 +140,7 @@
         padding-bottom: 50px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         max-width: 390px;
         background-color: #15171C;
