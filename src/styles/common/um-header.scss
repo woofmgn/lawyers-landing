@@ -34,6 +34,10 @@
         line-height: 18px;
         text-align: center;
         color: $white;
+
+        &:hover {
+          color: $orange;
+        }
     }
 
     &__contacts-wrapper {
@@ -55,9 +59,19 @@
         line-height: 18px;
         text-align: right;
         color: $white;
+
+        &_type_link {
+            &:hover {
+              color: $orange;
+            }
+        }
     }
 
     &__button {
+        font-family: $family;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
         padding: 12px 12px 13px 12px;
         border: 1.8px solid #EFB566;
         background-color: transparent;

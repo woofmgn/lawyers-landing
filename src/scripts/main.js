@@ -4,7 +4,7 @@ import { notify } from "./modules/notify.js";
 import { scrollToTop } from "./modules/scrollToTop.js";
 import { showFieldError } from "./modules/showFieldError.js";
 import { togglePopup } from "./modules/togglePopup.js";
-import { translateHeader } from "./modules/translateHeader.js";
+// import { translateHeader } from "./modules/translateHeader.js";
 
 const swiperTeam = new Swiper(".um-team__swiper", {
   slidesPerView: 3,
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   inputLabelTranslate();
 
   // Скрытие/Отображение шапки при прокрутке
-  translateHeader();
+  // translateHeader();
 
   // Ссылка с вложенными интерактивными элементами
   // try {

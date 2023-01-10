@@ -20,19 +20,29 @@
 
     &__user-accept {
         font-family: $family;
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
         color: $white;
+
+        &:hover {
+          transition: all .3s ease-in-out;
+          cursor: pointer;
+          color: $orange;
+        }
     }
 
     &__uralmedias {
         font-family: $family;
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
         color: $white;
+
+        &:hover {
+          transition: all .3s ease-in-out;
+          cursor: pointer;
+          color: $orange;
+        }
     }
 }
