@@ -3,3 +3,6 @@
 
 // А так же записываем нужные переменные в глобальную область видимости, так как тут локальная
 // EXAMPLE: window.$ = window.jQuery = jQuery;
+
+import Swiper from "swiper/bundle";
+export { Swiper };

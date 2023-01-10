@@ -1,0 +1,15 @@
+.um-link {
+    
+  &:active {
+      
+  }
+
+  @media (hover: hover) {
+      transition: all .3s ease-in-out;
+
+      &:hover {
+          cursor: pointer;
+          color: $orange;
+      }
+  }
+}

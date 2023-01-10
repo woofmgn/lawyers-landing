@@ -8,7 +8,15 @@
         transition: all .3s ease-in-out;
 
         &:hover {
-            
+            background-color: $orange;
+            cursor: pointer;
+            color: $black;
+        }
+
+        &_type_black:hover {
+          cursor: pointer;
+          color: $orange;
+          background-color: $black;
         }
     }
 }

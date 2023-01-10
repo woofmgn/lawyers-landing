@@ -1,3 +1,63 @@
+@media screen and (max-width: 850px) {
+  .um-about-trust {
+      &__container {
+          padding-bottom: 56px;
+      }
+
+      &__title {
+          padding-bottom: 23px;
+          font-size: 32px;
+          line-height: 130%;
+      }
+
+      &__card-list {
+          gap: 50px;
+      }
+
+      &__card-item {
+          max-width: 184px;
+      }
+
+      &__card-icon {
+          max-width: 56.59px;
+      }
+
+      &__card-title {
+          font-size: 20px;
+      }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .um-about-trust {
+      &__container {
+          padding-bottom: 41px;
+      }
+
+      &__title {
+          font-size: 28px;
+      }
+
+      &__card-list {
+          flex-direction: column;
+          gap: 21px;
+      }
+
+      &__card-item {
+          max-width: 167px;
+      }
+
+      &__card-icon {
+          max-width: 67px;
+      }
+
+      &__card-title {
+          font-size: 18px;
+          line-height: 155%;
+      }
+  }
+}
+
 .um-about-trust {
     &__container {
         padding-bottom: 69px;
@@ -7,7 +67,7 @@
     }
 
     &__title {
-      padding-bottom: 33px;
+        padding-bottom: 33px;
         font-family: $family;
         font-weight: 800;
         font-size: 36px;
@@ -18,8 +78,6 @@
     &__card-list {
         display: flex;
         gap: 115px;
-
-
     }
 
     &__card-item {

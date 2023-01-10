@@ -1,46 +1,24 @@
-import Swiper from "swiper/bundle";
 import { inputLabelTranslate } from "./modules/inputLabelTranslate.js";
 import { notify } from "./modules/notify.js";
 import { scrollToTop } from "./modules/scrollToTop.js";
 import { showFieldError } from "./modules/showFieldError.js";
 import { togglePopup } from "./modules/togglePopup.js";
-import { translateHeader } from "./modules/translateHeader.js";
+import {
+  toggleQtySwiperSlideCertificate,
+  toggleQtySwiperSlideTeam,
+} from "./modules/toggleQtySwiperSlide.js";
+// import { translateHeader } from "./modules/translateHeader.js";
 
-const swiperTeam = new Swiper(".um-team__swiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".um-team__swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".um-team__swiper-btn_type_next",
-    prevEl: ".um-team__swiper-btn_type_prev",
-  },
-});
+const swiperTeam = toggleQtySwiperSlideTeam();
+const swiperCertificate = toggleQtySwiperSlideCertificate();
 
 swiperTeam.slideNext();
-
-const swiperCertificate = new Swiper(".um-certificate__swiper", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".um-certificate__swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".um-certificate__swiper-btn_type_next",
-    prevEl: ".um-certificate__swiper-btn_type_prev",
-  },
-});
-
 swiperCertificate.slideNext();
+
+window.addEventListener("resize", () => {
+  toggleQtySwiperSlideTeam();
+  toggleQtySwiperSlideCertificate();
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   // Глобальный объект для доступа к функциям извне
@@ -64,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   inputLabelTranslate();
 
   // Скрытие/Отображение шапки при прокрутке
-  translateHeader();
+  // translateHeader();
 
   // Ссылка с вложенными интерактивными элементами
   // try {
