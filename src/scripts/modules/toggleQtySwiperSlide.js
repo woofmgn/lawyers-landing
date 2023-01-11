@@ -19,6 +19,7 @@ export const toggleQtySwiperSlideTeam = () => {
         prevEl: ".um-team__swiper-btn_type_prev",
       },
     });
+
     return swiperTeam;
   } else if (window.innerWidth < 769 && window.innerWidth > 450) {
     qtySlide = 2;
@@ -37,6 +38,7 @@ export const toggleQtySwiperSlideTeam = () => {
         prevEl: ".um-team__swiper-btn_type_prev",
       },
     });
+
     return swiperTeam;
   } else if (window.innerWidth < 450) {
     qtySlide = 1;
@@ -55,6 +57,7 @@ export const toggleQtySwiperSlideTeam = () => {
         prevEl: ".um-team__swiper-btn_type_prev",
       },
     });
+
     return swiperTeam;
   }
 };
@@ -78,6 +81,7 @@ export const toggleQtySwiperSlideCertificate = () => {
         prevEl: ".um-certificate__swiper-btn_type_prev",
       },
     });
+
     return swiperCertificate;
   } else if (window.innerWidth < 769 && window.innerWidth > 600) {
     qtySlide = 4;
@@ -96,6 +100,7 @@ export const toggleQtySwiperSlideCertificate = () => {
         prevEl: ".um-certificate__swiper-btn_type_prev",
       },
     });
+
     return swiperCertificate;
   } else if (window.innerWidth < 600 && window.innerWidth > 500) {
     qtySlide = 3;
@@ -114,6 +119,7 @@ export const toggleQtySwiperSlideCertificate = () => {
         prevEl: ".um-certificate__swiper-btn_type_prev",
       },
     });
+
     return swiperCertificate;
   } else if (window.innerWidth < 500) {
     qtySlide = 2;
@@ -132,6 +138,7 @@ export const toggleQtySwiperSlideCertificate = () => {
         prevEl: ".um-certificate__swiper-btn_type_prev",
       },
     });
+
     return swiperCertificate;
   }
 };
