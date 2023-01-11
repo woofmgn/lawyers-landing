@@ -54,7 +54,7 @@
         line-height: 18px;
         color: $white;
 
-        &:hover {
+        &:hover, &:active {
             transition: all .3s ease-in-out;
             cursor: pointer;
             color: $orange;
@@ -68,7 +68,7 @@
         line-height: 18px;
         color: $white;
 
-        &:hover {
+        &:hover, &:active {
             transition: all .3s ease-in-out;
             cursor: pointer;
             color: $orange;

@@ -1,19 +1,15 @@
 .um-btn {
-    
-    &:active {
-        
-    }
 
     @media (hover: hover) {
         transition: all .3s ease-in-out;
 
-        &:hover {
+        &:hover, &:active {
             background-color: $orange;
             cursor: pointer;
             color: $black;
         }
 
-        &_type_black:hover {
+        &_type_black:hover, &_type_black:active {
           cursor: pointer;
           color: $orange;
           background-color: $black;
