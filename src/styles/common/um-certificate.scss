@@ -7,13 +7,10 @@
 
       &__title {
         margin-bottom: 15px;
-        font-size: 32px;
-        line-height: 130%;
       }
   
       &__subtitle {
         margin-bottom: 25px;
-        font-size: 18px;
       }
   }
 
@@ -37,12 +34,10 @@
 
         &__title {
           margin-bottom: 9px;
-          font-size: 28px;
         }
     
         &__subtitle {
           margin-bottom: 16px;
-          font-size: 16px;
         }
     }
 
@@ -66,21 +61,11 @@
 
     &__title {
       margin-bottom: 13px;
-      font-family: $family;
-      font-weight: 800;
-      font-size: 36px;
-      line-height: 125%;
-      text-align: center;
       color: $black;
     }
 
     &__subtitle {
       margin-bottom: 23px;
-      font-family: $family;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 160%;
       text-align: center;
       color: $black;
     }

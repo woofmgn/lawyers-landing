@@ -5,13 +5,10 @@
 
         &__title {
             margin-bottom: 15px;
-            font-size: 32px;
-            line-height: 130%;
         }
 
         &__subtitle {
             margin-bottom: 30px;
-            font-size: 18px;
         }
 
         &__swiper-btn {
@@ -32,12 +29,10 @@
 
         &__title {
             margin-bottom: 9px;
-            font-size: 28px;
         }
 
         &__subtitle {
             margin-bottom: 25px;
-            font-size: 16px;
         }
 
         &__swiper-pagination {
@@ -69,20 +64,11 @@
     &__title {
         margin-bottom: 13px;
         max-width: 542px;
-        font-family: $family;
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 125%;
-        text-align: center;
     }
 
     &__subtitle {
         margin-bottom: 33px;
         max-width: 865px;
-        font-family:  $family;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 160%;
         text-align: center;
     }
 

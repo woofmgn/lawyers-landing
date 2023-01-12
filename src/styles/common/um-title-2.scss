@@ -1,0 +1,21 @@
+.um-title-2 {
+    font-family: $family;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 850px) {
+    .um-title-2 {
+        font-size: 35px;
+        line-height: 130%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .um-title-2 {
+      font-size: 31px;
+    }
+}

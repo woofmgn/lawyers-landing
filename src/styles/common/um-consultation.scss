@@ -14,20 +14,12 @@
         }
 
         &__title {
-            font-size: 32px;
-            line-height: 130%;
             text-align: center;
         }
 
-        &__description {
-            font-size: 18px;
+        &__subtitle {
             text-align: center;
         }
-
-        &__contacts {
-            font-size: 18px;
-            text-align: center;
-      }
     }
 }
 
@@ -42,18 +34,6 @@
         &__wrapper {
           max-width: 345px;
           gap: 9px
-        }
-
-        &__title {
-          font-size: 28px;
-        }
-
-        &__description {
-            font-size: 16px;
-        }
-
-        &__contacts {
-            font-size: 16px;
         }
     }
 }
@@ -75,26 +55,15 @@
     }
 
     &__title {
-        font-family: $family;
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 125%;
+        color: $black;
+        text-align: left;
+    }
+
+    &__subtitle {
         color: $black;
     }
 
-    &__description {
-        font-family: $family;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 160%;
-        color: $black;
-    }
-
-    &__contacts {
-        font-family: $family;
+    &__subtitle--contacts {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 160%;
-        color: $black;
     }
 }

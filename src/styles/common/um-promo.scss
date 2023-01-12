@@ -41,14 +41,10 @@
         &__title {
             margin-bottom: 25px;
             max-width: 489px;
-            font-size: 50px;
-            line-height: 130%;
         }
 
-        &__description {
+        &__subtitle {
             max-width: 450px;
-            font-size: 18px;
-            line-height: 160%;
         }
     }
 }
@@ -64,14 +60,10 @@
         &__title_type_mobile {
             display: block;
             max-width: 307px;
-            font-size: 45px;
-            line-height: 120%;
         }
 
-        &__description {
+        &__subtitle {
             max-width: 272px;
-            font-size: 16px;
-            line-height: 160%;
         }
     }
 }
@@ -166,11 +158,6 @@
     &__title {
         margin: 0 auto 16px 0;
         max-width: 531px;
-        font-family: $family;
-        font-weight: 800;
-        font-size: 55px;
-        line-height: 125%;
-        color: $white;
         z-index: 3;
 
         &_type_mobile {
@@ -178,13 +165,8 @@
         }
     }
 
-    &__description {
+    &__subtitle {
         max-width: 519px;
-        font-family: $family;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 160%;
-        color: #FFFFFF;
         z-index: 3;
     }
 }
