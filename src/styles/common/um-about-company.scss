@@ -1,7 +1,48 @@
+.um-about-company  {
+    // padding-top: 33px;
+    // margin-bottom: 78px;
+
+    &__container {
+        padding-bottom: 78px;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+        text-transform: none;
+        text-align: left;
+    }
+
+    &__description {
+        margin-top: 15px;
+        margin-right: 65px;
+        max-width: 692px;
+    }
+
+    &__paragraph {
+      display: block;
+
+      &:last-of-type {
+        margin-top: 10px;
+      }
+    }
+
+    &__image {
+      max-width: 483px;
+      max-height: 370px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
   .um-about-company  {
-    padding-top: 33px;
-    margin-bottom: 65px;
+
+    &__container {
+      padding-bottom: 65px;
+    }
+
     &__wrapper {
       flex-direction: column;
       align-items: center;
@@ -13,14 +54,14 @@
 
     &__description {
         margin-right: 0px;
-        margin-bottom: 30px;
         text-align: center;
     }
 
     &__image {
-      max-width: 100%;
-      width: 100%;
-      max-height: 100%;
+        margin-top: 30px;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
     }
   }
 }
@@ -28,64 +69,27 @@
 @media screen and (max-width: 768px) {
   .um-about-company  {
 
-    &__title {
-        font-size: 35px;
-        line-height: 130%;
-        margin-bottom: 13px;
-    }
-
     &__description {
-        font-size: 18px;
+        margin-top: 13px;
+        margin-right: 0;
+        text-align: center;
     }
   }
 }
 
 @media screen and (max-width: 400px) {
   .um-about-company  {
-    padding-top: 33px;
-    margin-bottom: 56px;
 
-    &__title {
-        font-size: 31px;
-        margin-bottom: 10px;
+    &__container {
+        padding-bottom: 42px;
     }
 
     &__description {
-        margin-bottom: 25px;
-        font-size: 16px;
-    }
-  }
-}
-
-.um-about-company  {
-    padding-top: 33px;
-    margin-bottom: 78px;
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__title {
-        margin-bottom: 15px;
-        font-family: $family;
-        font-weight: 800;
-        font-size: 39px;
-        line-height: 125%;
-        color: $white;
-    }
-
-    &__description {
-        max-width: 692px;
-        margin-right: 65px;
-        font-family: $family;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 160%;
-        color: $white;
+        margin-top: 10px;
     }
 
     &__image {
-      max-width: 483px;
-      max-height: 370px;
+        margin-top: 25px;
     }
+  }
 }

@@ -1,63 +1,3 @@
-@media screen and (max-width: 850px) {
-    .um-about-trust {
-        &__container {
-            padding-bottom: 56px;
-        }
-
-        &__title {
-            padding-bottom: 23px;
-            font-size: 32px;
-            line-height: 130%;
-        }
-
-        &__card-list {
-            gap: 50px;
-        }
-
-        &__card-item {
-            max-width: 184px;
-        }
-
-        &__card-icon {
-            max-width: 56.59px;
-        }
-
-        &__card-title {
-            font-size: 20px;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .um-about-trust {
-        &__container {
-            padding-bottom: 41px;
-        }
-
-        &__title {
-            font-size: 28px;
-        }
-
-        &__card-list {
-            flex-direction: column;
-            gap: 21px;
-        }
-
-        &__card-item {
-            max-width: 167px;
-        }
-
-        &__card-icon {
-            max-width: 67px;
-        }
-
-        &__card-title {
-            font-size: 18px;
-            line-height: 155%;
-        }
-    }
-}
-
 .um-about-trust {
     &__container {
         padding-bottom: 69px;
@@ -66,25 +6,17 @@
         align-items: center;
     }
 
-    &__title {
-        padding-bottom: 33px;
-        font-family: $family;
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 125%;
-        text-align: center;
-    }
-
-    &__card-list {
+    &__items {
+        margin-top: 33px;
         display: flex;
         gap: 115px;
     }
 
-    &__card-item {
+    &__item {
         max-width: 234px;
     }
 
-    &__card-item {
+    &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -95,11 +27,62 @@
       }
     }
 
-    &__card-title {
+    &__item-title {
         font-family: $family;
         font-weight: 500;
         font-size: 22px;
         line-height: 140%;
         text-align: center;
     }
+}
+
+@media screen and (max-width: 850px) {
+  .um-about-trust {
+      &__container {
+          padding-bottom: 56px;
+      }
+
+      &__items {
+          margin-top: 23px;
+          gap: 50px;
+      }
+
+      &__item {
+          max-width: 184px;
+      }
+
+      &__item-icon {
+          max-width: 56.59px;
+      }
+
+      &__item-title {
+          font-size: 20px;
+      }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .um-about-trust {
+      &__container {
+          padding-bottom: 41px;
+      }
+
+      &__items {
+          flex-direction: column;
+          gap: 21px;
+      }
+
+      &__item {
+          max-width: 167px;
+      }
+
+      &__item-icon {
+          max-width: 67px;
+      }
+
+      &__item-title {
+          font-size: 18px;
+          line-height: 155%;
+      }
+  }
 }

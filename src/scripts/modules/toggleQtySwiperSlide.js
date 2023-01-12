@@ -125,7 +125,7 @@ export const toggleQtySwiperSlideCertificate = () => {
     qtySlide = 2;
     const swiperCertificate = new Swiper(".um-certificate__swiper", {
       slidesPerView: qtySlide,
-      spaceBetween: 30,
+      spaceBetween: 19,
       slidesPerGroup: 1,
       loop: true,
       loopFillGroupWithBlank: true,

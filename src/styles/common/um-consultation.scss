@@ -1,68 +1,9 @@
-@media screen and (max-width: 1024px) {
-    .um-consultation {
-        padding: 52px 0;
-
-        &__container {
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-        }
-
-        &__wrapper {
-            max-width: 669px;
-            gap: 14px
-        }
-
-        &__title {
-            font-size: 32px;
-            line-height: 130%;
-            text-align: center;
-        }
-
-        &__description {
-            font-size: 18px;
-            text-align: center;
-        }
-
-        &__contacts {
-            font-size: 18px;
-            text-align: center;
-      }
-    }
-}
-
-@media screen and (max-width: 530px) {
-    .um-consultation {
-        padding: 34px 0 35px;
-
-        &__container {
-          gap: 20px;
-        }
-
-        &__wrapper {
-          max-width: 345px;
-          gap: 9px
-        }
-
-        &__title {
-          font-size: 28px;
-        }
-
-        &__description {
-            font-size: 16px;
-        }
-
-        &__contacts {
-            font-size: 16px;
-        }
-    }
-}
-
 .um-consultation {
-    padding: 61px 0 63px;
     background-color: $white;
 
     &__container {
+        padding-top: 61px;
+        padding-bottom: 63px;
         display: flex;
         justify-content: space-between;
     }
@@ -75,26 +16,55 @@
     }
 
     &__title {
-        font-family: $family;
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 125%;
+        color: $black;
+        text-align: left;
+    }
+
+    &__subtitle {
         color: $black;
     }
 
-    &__description {
-        font-family: $family;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 160%;
-        color: $black;
-    }
-
-    &__contacts {
-        font-family: $family;
+    &__subtitle--contacts {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 160%;
-        color: $black;
     }
+}
+
+@media screen and (max-width: 1024px) {
+  .um-consultation {
+
+      &__container {
+          padding: 52px 0;
+          flex-direction: column;
+          align-items: center;
+          gap: 25px;
+      }
+
+      &__wrapper {
+          max-width: 669px;
+          gap: 14px
+      }
+
+      &__title {
+          text-align: center;
+      }
+
+      &__subtitle {
+          text-align: center;
+      }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .um-consultation {
+
+      &__container {
+        padding: 34px 15px 35px;
+        gap: 20px;
+      }
+
+      &__wrapper {
+        max-width: 345px;
+        gap: 9px
+      }
+  }
 }
