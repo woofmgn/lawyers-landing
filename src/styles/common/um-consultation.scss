@@ -25,6 +25,7 @@
     }
 
     &__subtitle--contacts {
+        max-width: 450px;
         font-weight: 500;
     }
 }
@@ -51,6 +52,10 @@
       &__subtitle {
           text-align: center;
       }
+
+      &__subtitle--contacts {
+          max-width: 647px;
+      }
   }
 }
 
@@ -66,5 +71,10 @@
         max-width: 345px;
         gap: 9px
       }
+
+      &__subtitle--contacts {
+        align-self: center;
+        max-width: 300px;
+    }
   }
 }

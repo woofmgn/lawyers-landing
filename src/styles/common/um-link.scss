@@ -1,8 +1,7 @@
 .um-link {
-    
-  &:active {
-      
-  }
+    &--type-2 {
+      color: $orange;
+    }
 
   @media (hover: hover) {
       transition: all .3s ease-in-out;
@@ -10,6 +9,10 @@
       &:hover, &:active {
           cursor: pointer;
           color: $orange;
+      }
+
+      &--type-2:hover, &--type-2:active {
+        color: $black;
       }
   }
 }
