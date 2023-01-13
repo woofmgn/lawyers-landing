@@ -42,19 +42,19 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .um-footer {
-        &__wrapper {
-            justify-content: none;
-        }
+// @media screen and (max-width: 768px) {
+//     .um-footer {
+//         &__wrapper {
+//             justify-content: none;
+//         }
 
-        &__user-accept {
-            margin-right: 25px;
-        }
-    }
-}
+//         &__user-accept {
+//             margin-right: 25px;
+//         }
+//     }
+// }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
     .um-footer {
         &__container {
             margin-top: 18px;
@@ -67,6 +67,7 @@
         }
 
         &__wrapper {
+            justify-content: none;
             flex-direction: column;
         }
 

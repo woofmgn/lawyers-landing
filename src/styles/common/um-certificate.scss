@@ -56,7 +56,8 @@
     margin-top: 48px;
 }
 
-@media screen and (max-width: 768px) {
+// @media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     .um-sertificate {
 
         &__container {
@@ -84,7 +85,8 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+// @media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
     .um-sertificate {
         &__container {
             padding-top: 31px;

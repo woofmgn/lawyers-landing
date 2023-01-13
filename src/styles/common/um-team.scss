@@ -55,7 +55,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+// @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
   .um-team {
 
       &__container {
@@ -82,7 +83,8 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+// @media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   .um-team {
 
       &__container {
@@ -101,13 +103,17 @@
       &__swiper-pagination {
           bottom: 28px;
       }
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .um-team {
       &__swiper-btn {
           visibility: hidden;
       }
   }
 }
+
+// @media screen and (max-width: 400px) {
+//   .um-team {
+//       &__swiper-btn {
+//           visibility: hidden;
+//       }
+//   }
+// }
