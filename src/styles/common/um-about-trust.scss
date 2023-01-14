@@ -14,9 +14,6 @@
 
     &__item {
         max-width: 234px;
-    }
-
-    &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,6 +22,13 @@
         &:nth-child(2) {
           justify-content: end;
       }
+    }
+
+    &__item-icon {
+      max-width: 88px;
+      width: 100%;
+      max-height: 88px;
+      height: 100%px;
     }
 
     &__item-title {
@@ -50,10 +54,18 @@
 
       &__item {
           max-width: 184px;
+          gap: 16.04px;
+
+          &:nth-child(2) {
+            justify-content: none;
+        }
       }
 
       &__item-icon {
-          max-width: 56.59px;
+        max-width: 56.59px;
+        width: 100%;
+        max-height: 56.59px;
+        height: 56.59px;
       }
 
       &__item-title {
@@ -69,6 +81,10 @@
           padding-bottom: 41px;
       }
 
+      &__title {
+        max-width: 318px;
+      }
+
       &__items {
           flex-direction: column;
           gap: 21px;
@@ -76,10 +92,14 @@
 
       &__item {
           max-width: 167px;
+          gap: 16.58px;
       }
 
       &__item-icon {
-          max-width: 67px;
+          max-width: 66.84px;
+          width: 100%;
+          max-height: 66.84px;
+          height: 66.84px;
       }
 
       &__item-title {

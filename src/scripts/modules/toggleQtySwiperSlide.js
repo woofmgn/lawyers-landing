@@ -15,14 +15,14 @@ const SwiperCertificateSeggings = {
 };
 
 const createSwiper = (
-  newQty,
+  { qty, gap },
   { swiperSelector, paginSelector, btnNextSelector, btnPrevSelector }
 ) => {
   const swiper = new Swiper(swiperSelector, {
-    slidesPerView: newQty,
-    spaceBetween: 30,
+    slidesPerView: qty,
+    spaceBetween: gap,
     slidesPerGroup: 1,
-    loop: true,
+    loop: false,
     loopFillGroupWithBlank: true,
     pagination: {
       el: paginSelector,
@@ -38,49 +38,69 @@ const createSwiper = (
 };
 
 export const toggleQtySwiperSlideTeam = () => {
-  let qtySlide = 3;
+  const slideSettings = {
+    qty: 3,
+    gap: 39,
+  };
 
   if (window.innerWidth > 1023) {
-    qtySlide = 3;
-    const newSwiperTeam = createSwiper(qtySlide, SwiperTeamSeggings);
+    slideSettings.qty = 3;
+    slideSettings.gap = 39;
+    const newSwiperTeam = createSwiper(slideSettings, SwiperTeamSeggings);
 
     return newSwiperTeam;
-  } else if (window.innerWidth < 1024 && window.innerWidth > 768) {
-    qtySlide = 2;
-    const newSwiperTeam = createSwiper(qtySlide, SwiperTeamSeggings);
+  } else if (window.innerWidth < 1024 && window.innerWidth >= 768) {
+    slideSettings.qty = 2;
+    slideSettings.gap = 20;
+    const newSwiperTeam = createSwiper(slideSettings, SwiperTeamSeggings);
 
     return newSwiperTeam;
   } else if (window.innerWidth < 768) {
-    qtySlide = 1;
-    const newSwiperTeam = createSwiper(qtySlide, SwiperTeamSeggings);
+    slideSettings.qty = 1;
+    const newSwiperTeam = createSwiper(slideSettings, SwiperTeamSeggings);
 
     return newSwiperTeam;
   }
 };
 
 export const toggleQtySwiperSlideCertificate = () => {
-  let qtySlide = 5;
+  const slideSettings = {
+    qty: 5,
+    gap: 31,
+  };
 
   if (window.innerWidth > 1023) {
-    qtySlide = 5;
+    slideSettings.qty = 5;
+    slideSettings.gap = 31;
     const newSwiperCertificate = createSwiper(
-      qtySlide,
+      slideSettings,
       SwiperCertificateSeggings
     );
 
     return newSwiperCertificate;
   } else if (window.innerWidth < 1024 && window.innerWidth > 767) {
-    qtySlide = 4;
+    slideSettings.qty = 4;
+    slideSettings.gap = 20;
     const newSwiperCertificate = createSwiper(
-      qtySlide,
+      slideSettings,
+      SwiperCertificateSeggings
+    );
+
+    return newSwiperCertificate;
+  } else if (window.innerWidth < 768 && window.innerWidth > 500) {
+    slideSettings.qty = 3;
+    slideSettings.gap = 20;
+    const newSwiperCertificate = createSwiper(
+      slideSettings,
       SwiperCertificateSeggings
     );
 
     return newSwiperCertificate;
   } else if (window.innerWidth < 768 && window.innerWidth > 300) {
-    qtySlide = 2;
+    slideSettings.qty = 2;
+    slideSettings.gap = 20;
     const newSwiperCertificate = createSwiper(
-      qtySlide,
+      slideSettings,
       SwiperCertificateSeggings
     );
 

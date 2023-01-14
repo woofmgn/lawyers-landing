@@ -4,6 +4,7 @@
 
     &__input {
         width: 100%;
+        margin-top: 6px;
         padding-left: 20px;
         height: 57px;
         border: 1.5px solid $black;
@@ -35,12 +36,36 @@
     }
 }
 
+@media screen and (max-width: 1023px) {
+  .um-form {
+
+    &__input {
+        margin-top: 4px;
+        height: 57px;
+        font-size: 15px;
+        line-height: 19px;
+
+        &:last-of-type {
+          margin-top: 24px;
+        }
+    }
+
+    &__button-submit {
+        margin-top: 21px;
+    }
+
+    &__accept-terms  {
+      margin-top: 10px;
+    }
+  }
+}
+
 // @media screen and (max-width: 400px) {
 @media screen and (max-width: 767px) {
   .um-form {
 
     &__input {
-        height: 53px;
+        height: 51px;
         font-size: 15px;
         line-height: 19px;
 
@@ -54,7 +79,7 @@
     }
 
     &__accept-terms  {
-      margin-top: 14px;
+      margin-top: 11px;
     }
   }
 }

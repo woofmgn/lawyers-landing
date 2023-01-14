@@ -2,6 +2,7 @@ import { inputLabelTranslate } from "./modules/inputLabelTranslate.js";
 import { notify } from "./modules/notify.js";
 import { scrollToTop } from "./modules/scrollToTop.js";
 import { showFieldError } from "./modules/showFieldError.js";
+import { toggleImages } from "./modules/toggleImages.js";
 import { togglePopup } from "./modules/togglePopup.js";
 import {
   toggleQtySwiperSlideCertificate,
@@ -18,6 +19,7 @@ swiperCertificate.slideNext();
 window.addEventListener("resize", () => {
   toggleQtySwiperSlideTeam();
   toggleQtySwiperSlideCertificate();
+  toggleImages();
 });
 
 document.addEventListener("DOMContentLoaded", function () {

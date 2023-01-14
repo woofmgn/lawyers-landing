@@ -11,7 +11,8 @@
     }
 
     &__subtitle {
-        margin-top: 13px;
+        max-width: 865px;
+        margin: 13px auto 0 auto;
         text-align: center;
         color: $black;
     }
@@ -62,11 +63,17 @@
 
         &__container {
             padding-top: 52px;
-            padding-bottom: 99px;
+            padding-bottom: 55px;
         }
     
         &__subtitle {
             margin-top: 15px;
+        }
+
+        &__image {
+          max-width: 167px;
+          width: 100%;
+          max-height: 241px;
         }
     }
 
@@ -81,7 +88,7 @@
     }
 
     .um-certificate__swiper-pagination {
-        margin-top: 35px;
+        margin-top: 0px;
     }
 }
 
@@ -90,12 +97,21 @@
     .um-sertificate {
         &__container {
             padding-top: 31px;
-            padding-bottom: 73px;
+            padding-bottom: 51px;
         }
 
         &__subtitle {
             margin-top: 9px;
         }
+
+        &__swiper-wrapper {
+          max-height: 241px;
+        }
+        
+        // &__slide {
+        //   max-width: 162.98px;
+        //   width: 100%;
+        // }
     }
 
     .um-certificate__swiper {
@@ -108,6 +124,6 @@
     }
 
     .um-certificate__swiper-pagination {
-        margin-top: 28px;
+        margin-top: 0px;
     }
 }
