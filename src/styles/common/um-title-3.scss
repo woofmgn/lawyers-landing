@@ -6,14 +6,16 @@
     text-align: center;
 }
 
-@media screen and (max-width: 850px) {
+// @media screen and (max-width: 850px) {
+@media screen and (max-width: 1023px) {
     .um-title-3 {
         font-size: 32px;
         line-height: 130%;
     }
 }
 
-@media screen and (max-width: 600px) {
+// @media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .um-title-3 {
       font-size: 28px;
     }

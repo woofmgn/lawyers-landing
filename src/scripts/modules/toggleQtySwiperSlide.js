@@ -1,144 +1,109 @@
 import { Swiper } from "../libs.js";
 
+const SwiperTeamSeggings = {
+  swiperSelector: ".um-team__swiper",
+  paginSelector: ".um-team__swiper-pagination",
+  btnNextSelector: ".um-team__swiper-btn_type_next",
+  btnPrevSelector: ".um-team__swiper-btn_type_prev",
+};
+
+const SwiperCertificateSeggings = {
+  swiperSelector: ".um-certificate__swiper",
+  paginSelector: ".um-certificate__swiper-pagination",
+  btnNextSelector: ".um-certificate__swiper-btn_type_next",
+  btnPrevSelector: ".um-certificate__swiper-btn_type_prev",
+};
+
+const createSwiper = (
+  { qty, gap },
+  { swiperSelector, paginSelector, btnNextSelector, btnPrevSelector }
+) => {
+  const swiper = new Swiper(swiperSelector, {
+    slidesPerView: qty,
+    spaceBetween: gap,
+    slidesPerGroup: 1,
+    loop: false,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: paginSelector,
+      clickable: true,
+    },
+    navigation: {
+      nextEl: btnNextSelector,
+      prevEl: btnPrevSelector,
+    },
+  });
+
+  return swiper;
+};
+
 export const toggleQtySwiperSlideTeam = () => {
-  let qtySlide = 3;
-  if (window.innerWidth > 769) {
-    qtySlide = 3;
-    const swiperTeam = new Swiper(".um-team__swiper", {
-      slidesPerView: qtySlide,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".um-team__swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".um-team__swiper-btn_type_next",
-        prevEl: ".um-team__swiper-btn_type_prev",
-      },
-    });
+  const slideSettings = {
+    qty: 3,
+    gap: 39,
+  };
 
-    return swiperTeam;
-  } else if (window.innerWidth < 769 && window.innerWidth > 450) {
-    qtySlide = 2;
-    const swiperTeam = new Swiper(".um-team__swiper", {
-      slidesPerView: qtySlide,
-      spaceBetween: 20,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".um-team__swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".um-team__swiper-btn_type_next",
-        prevEl: ".um-team__swiper-btn_type_prev",
-      },
-    });
+  if (window.innerWidth > 1023) {
+    slideSettings.qty = 3;
+    slideSettings.gap = 39;
+    const newSwiperTeam = createSwiper(slideSettings, SwiperTeamSeggings);
 
-    return swiperTeam;
-  } else if (window.innerWidth < 450) {
-    qtySlide = 1;
-    const swiperTeam = new Swiper(".um-team__swiper", {
-      slidesPerView: qtySlide,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".um-team__swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".um-team__swiper-btn_type_next",
-        prevEl: ".um-team__swiper-btn_type_prev",
-      },
-    });
+    return newSwiperTeam;
+  } else if (window.innerWidth < 1024 && window.innerWidth >= 768) {
+    slideSettings.qty = 2;
+    slideSettings.gap = 20;
+    const newSwiperTeam = createSwiper(slideSettings, SwiperTeamSeggings);
 
-    return swiperTeam;
+    return newSwiperTeam;
+  } else if (window.innerWidth < 768) {
+    slideSettings.qty = 1;
+    const newSwiperTeam = createSwiper(slideSettings, SwiperTeamSeggings);
+
+    return newSwiperTeam;
   }
 };
 
 export const toggleQtySwiperSlideCertificate = () => {
-  let qtySlide = 5;
-  if (window.innerWidth > 769) {
-    qtySlide = 5;
-    const swiperCertificate = new Swiper(".um-certificate__swiper", {
-      slidesPerView: qtySlide,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".um-certificate__swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".um-certificate__swiper-btn_type_next",
-        prevEl: ".um-certificate__swiper-btn_type_prev",
-      },
-    });
+  const slideSettings = {
+    qty: 5,
+    gap: 31,
+  };
 
-    return swiperCertificate;
-  } else if (window.innerWidth < 769 && window.innerWidth > 600) {
-    qtySlide = 4;
-    const swiperCertificate = new Swiper(".um-certificate__swiper", {
-      slidesPerView: qtySlide,
-      spaceBetween: 20,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".um-certificate__swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".um-certificate__swiper-btn_type_next",
-        prevEl: ".um-certificate__swiper-btn_type_prev",
-      },
-    });
+  if (window.innerWidth > 1023) {
+    slideSettings.qty = 5;
+    slideSettings.gap = 31;
+    const newSwiperCertificate = createSwiper(
+      slideSettings,
+      SwiperCertificateSeggings
+    );
 
-    return swiperCertificate;
-  } else if (window.innerWidth < 600 && window.innerWidth > 500) {
-    qtySlide = 3;
-    const swiperCertificate = new Swiper(".um-certificate__swiper", {
-      slidesPerView: qtySlide,
-      spaceBetween: 20,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".um-certificate__swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".um-certificate__swiper-btn_type_next",
-        prevEl: ".um-certificate__swiper-btn_type_prev",
-      },
-    });
+    return newSwiperCertificate;
+  } else if (window.innerWidth < 1024 && window.innerWidth > 767) {
+    slideSettings.qty = 4;
+    slideSettings.gap = 20;
+    const newSwiperCertificate = createSwiper(
+      slideSettings,
+      SwiperCertificateSeggings
+    );
 
-    return swiperCertificate;
-  } else if (window.innerWidth < 500) {
-    qtySlide = 2;
-    const swiperCertificate = new Swiper(".um-certificate__swiper", {
-      slidesPerView: qtySlide,
-      spaceBetween: 19,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".um-certificate__swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".um-certificate__swiper-btn_type_next",
-        prevEl: ".um-certificate__swiper-btn_type_prev",
-      },
-    });
+    return newSwiperCertificate;
+  } else if (window.innerWidth < 768 && window.innerWidth > 500) {
+    slideSettings.qty = 3;
+    slideSettings.gap = 20;
+    const newSwiperCertificate = createSwiper(
+      slideSettings,
+      SwiperCertificateSeggings
+    );
 
-    return swiperCertificate;
+    return newSwiperCertificate;
+  } else if (window.innerWidth < 768 && window.innerWidth > 300) {
+    slideSettings.qty = 2;
+    slideSettings.gap = 20;
+    const newSwiperCertificate = createSwiper(
+      slideSettings,
+      SwiperCertificateSeggings
+    );
+
+    return newSwiperCertificate;
   }
 };

@@ -9,7 +9,8 @@
         max-width: 546px;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        gap: 45px;
         align-items: center;
     }
 
@@ -42,19 +43,21 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     .um-footer {
         &__wrapper {
+            max-width: 521px;
             justify-content: none;
+            gap: 20px;
         }
 
         &__user-accept {
-            margin-right: 25px;
+            margin-right: 0px;
         }
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
     .um-footer {
         &__container {
             margin-top: 18px;
@@ -67,15 +70,21 @@
         }
 
         &__wrapper {
+            justify-content: flex-start;
             flex-direction: column;
+            gap: 0px;
         }
 
         &__user-accept {
             margin-right: 0;
+            font-size: 12px;
+            line-height: 15px;
         }
 
         &__uralmedias {
             margin-top: 10px;
+            font-size: 12px;
+            line-height: 15px;
         }
     }
 }
