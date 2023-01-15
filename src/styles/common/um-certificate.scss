@@ -88,7 +88,7 @@
     }
 
     .um-certificate__swiper-pagination {
-        margin-top: -34px;
+        margin-top: 0px;
     }
 }
 
@@ -105,13 +105,13 @@
 
         &__swiper-wrapper {
           max-height: 241px;
-
+          height: 100%;
         }
     }
 
     .um-certificate__swiper {
       margin-top: 16px;
-      max-width: 345px;
+      // max-width: 345px;
       width: 100%;
       height: 235px;
   }
