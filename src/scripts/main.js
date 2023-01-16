@@ -1,3 +1,4 @@
+import { formSubmit, pageForm, popupForm } from "./modules/formSubmit.js";
 import { inputLabelTranslate } from "./modules/inputLabelTranslate.js";
 import { notify } from "./modules/notify.js";
 import { scrollToTop } from "./modules/scrollToTop.js";
@@ -5,6 +6,15 @@ import { showFieldError } from "./modules/showFieldError.js";
 import { burgerButton, toggleBurger } from "./modules/toggleBurger.js";
 import { toggleContent } from "./modules/toggleContent.js";
 import { togglePopup } from "./modules/togglePopup.js";
+import {
+  btnCloseCallPopup,
+  btnCloseThanksPopup,
+  btnOpenCallPopupBurger,
+  btnOpenCallPopupHeader,
+  callPopup,
+  thanksPopup,
+  togglePopups,
+} from "./modules/togglePopups.js";
 import {
   toggleQtySwiperSlideCertificate,
   toggleQtySwiperSlideTeam,
@@ -21,6 +31,35 @@ window.addEventListener("resize", () => {
 
 burgerButton.addEventListener("click", () => {
   toggleBurger();
+});
+
+pageForm.addEventListener("submit", (evt) => {
+  formSubmit(evt);
+  togglePopups(thanksPopup);
+});
+
+popupForm.addEventListener("submit", (evt) => {
+  formSubmit(evt);
+  togglePopups(callPopup);
+  togglePopups(thanksPopup);
+});
+
+btnOpenCallPopupHeader.addEventListener("click", () => {
+  togglePopups(callPopup);
+});
+
+btnOpenCallPopupBurger.addEventListener("click", () => {
+  togglePopups(callPopup);
+});
+
+if (btnCloseCallPopup) {
+  btnCloseCallPopup.addEventListener("click", () => {
+    togglePopups(callPopup);
+  });
+}
+
+btnCloseThanksPopup.addEventListener("click", () => {
+  togglePopups(thanksPopup);
 });
 
 document.addEventListener("DOMContentLoaded", function () {

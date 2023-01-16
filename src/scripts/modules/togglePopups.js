@@ -1,0 +1,20 @@
+const thanksPopup = document.querySelector(".js-popup-thanks");
+const callPopup = document.querySelector(".js-popup-call");
+const btnCloseCallPopup = callPopup.querySelector(".js-close-btn");
+const btnCloseThanksPopup = thanksPopup.querySelector(".js-close-btn");
+const btnOpenCallPopupHeader = document.querySelector(".js-header-call-btn");
+const btnOpenCallPopupBurger = document.querySelector(".js-burger-call-btn");
+
+const togglePopups = (popup) => {
+  popup.classList.toggle("is-visible");
+};
+
+export {
+  thanksPopup,
+  callPopup,
+  btnCloseCallPopup,
+  btnCloseThanksPopup,
+  btnOpenCallPopupHeader,
+  btnOpenCallPopupBurger,
+  togglePopups,
+};
