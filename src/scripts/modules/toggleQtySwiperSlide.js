@@ -107,3 +107,17 @@ export const toggleQtySwiperSlideCertificate = () => {
     return newSwiperCertificate;
   }
 };
+
+if (window.location.href === "http://localhost:3000/") {
+  const swiperTeam = toggleQtySwiperSlideTeam();
+  const swiperCertificate = toggleQtySwiperSlideCertificate();
+
+  swiperTeam.slideNext();
+  swiperCertificate.slideNext();
+}
+
+// const swiperTeam = toggleQtySwiperSlideTeam();
+// const swiperCertificate = toggleQtySwiperSlideCertificate();
+
+// swiperTeam.slideNext();
+// swiperCertificate.slideNext();

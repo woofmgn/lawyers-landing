@@ -2,7 +2,8 @@ import { inputLabelTranslate } from "./modules/inputLabelTranslate.js";
 import { notify } from "./modules/notify.js";
 import { scrollToTop } from "./modules/scrollToTop.js";
 import { showFieldError } from "./modules/showFieldError.js";
-import { toggleImages } from "./modules/toggleImages.js";
+import { burgerButton, toggleBurger } from "./modules/toggleBurger.js";
+import { toggleContent } from "./modules/toggleContent.js";
 import { togglePopup } from "./modules/togglePopup.js";
 import {
   toggleQtySwiperSlideCertificate,
@@ -10,16 +11,16 @@ import {
 } from "./modules/toggleQtySwiperSlide.js";
 // import { translateHeader } from "./modules/translateHeader.js";
 
-const swiperTeam = toggleQtySwiperSlideTeam();
-const swiperCertificate = toggleQtySwiperSlideCertificate();
-
-swiperTeam.slideNext();
-swiperCertificate.slideNext();
-
 window.addEventListener("resize", () => {
-  toggleQtySwiperSlideTeam();
-  toggleQtySwiperSlideCertificate();
-  toggleImages();
+  if (window.location.href === "/" || "http://localhost:3000/") {
+    toggleQtySwiperSlideTeam();
+    toggleQtySwiperSlideCertificate();
+  }
+  toggleContent();
+});
+
+burgerButton.addEventListener("click", () => {
+  toggleBurger();
 });
 
 document.addEventListener("DOMContentLoaded", function () {

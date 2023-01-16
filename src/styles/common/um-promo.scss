@@ -97,7 +97,6 @@
 
 @media screen and (max-width: 768px) {
   .um-promo {
-      // height: 618px;
       background-image: url(../../img/promo/promo-tablet.png);
 
       &::before {
@@ -126,7 +125,7 @@
       background-position: -170px;
 
       &__title--desctop {
-          display: none;
+          max-width: 307px;
       }
 
       &__title--mobile {
