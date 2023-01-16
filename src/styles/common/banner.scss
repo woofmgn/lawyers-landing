@@ -30,6 +30,32 @@
         } 
     }
 
+    &--mediation {
+      max-height: 576px;
+        background-image: url(../../img/banner/banner-mediation--pc.png);
+
+        @media screen and (max-width: 1023px) {
+          background-image: url(../../img/banner/banner-mediation--tablet.png);
+        } 
+
+        @media screen and (max-width: 767px) {
+          background-image: url(../../img/banner/banner-mediation--mobile.png);
+        } 
+    }
+
+    &--tax-disputs {
+      max-height: 576px;
+        background-image: url(../../img/banner/banner-tax-disputs.png);
+
+        @media screen and (max-width: 1023px) {
+          background-image: url(../../img/banner/banner-tax-disputs--tablet.png);
+        } 
+
+        @media screen and (max-width: 767px) {
+          background-image: url(../../img/banner/banner-tax-disputs--mobile.png);
+        } 
+    }
+
     &__container {
       margin-top: 164px;
       box-sizing: border-box;

@@ -9,10 +9,6 @@
         flex-direction: column;
         align-items: center;
         gap: 21px;
-
-        &:nth-child(2) {
-          justify-content: end;
-      }
     }
 
     &__item-icon {
@@ -42,10 +38,6 @@
       &__item {
           max-width: 184px;
           gap: 16.04px;
-
-          &:nth-child(2) {
-            justify-content: none;
-        }
       }
 
       &__item-icon {
