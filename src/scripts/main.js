@@ -1,4 +1,5 @@
 import { formSubmit, pageForm, popupForm } from "./modules/formSubmit.js";
+import { mapInit } from "./modules/geoMap.js";
 import { inputLabelTranslate } from "./modules/inputLabelTranslate.js";
 import { notify } from "./modules/notify.js";
 import { scrollToTop } from "./modules/scrollToTop.js";
@@ -20,6 +21,10 @@ import {
   toggleQtySwiperSlideTeam,
 } from "./modules/toggleQtySwiperSlide.js";
 // import { translateHeader } from "./modules/translateHeader.js";
+
+if (window.location.href === "http://localhost:3000/contacts-page.html") {
+  ymaps.ready(mapInit);
+}
 
 window.addEventListener("resize", () => {
   if (window.location.href === "/" || "http://localhost:3000/") {
