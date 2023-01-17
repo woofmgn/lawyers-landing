@@ -2,6 +2,14 @@
     max-width: 518px;
     width: 100%;
 
+    &--popup {
+      margin-top: 18px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 12px;
+      }
+    }
+
     &__input {
         width: 100%;
         margin-top: 6px;
@@ -13,7 +21,10 @@
         font-size: 16px;
         line-height: 20px;
         color: $black;
-        opacity: 0.4;
+
+        &::placeholder {
+          opacity: 0.4;
+        }
 
         &:last-of-type {
             margin-top: 23px;

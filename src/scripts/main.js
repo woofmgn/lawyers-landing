@@ -1,3 +1,5 @@
+import { formSubmit, pageForm, popupForm } from "./modules/formSubmit.js";
+import { mapInit } from "./modules/geoMap.js";
 import { inputLabelTranslate } from "./modules/inputLabelTranslate.js";
 import { notify } from "./modules/notify.js";
 import { scrollToTop } from "./modules/scrollToTop.js";
@@ -6,10 +8,23 @@ import { burgerButton, toggleBurger } from "./modules/toggleBurger.js";
 import { toggleContent } from "./modules/toggleContent.js";
 import { togglePopup } from "./modules/togglePopup.js";
 import {
+  btnCloseCallPopup,
+  btnCloseThanksPopup,
+  btnOpenCallPopupBurger,
+  btnOpenCallPopupHeader,
+  callPopup,
+  thanksPopup,
+  togglePopups,
+} from "./modules/togglePopups.js";
+import {
   toggleQtySwiperSlideCertificate,
   toggleQtySwiperSlideTeam,
 } from "./modules/toggleQtySwiperSlide.js";
 // import { translateHeader } from "./modules/translateHeader.js";
+
+if (window.location.href === "http://localhost:3000/contacts-page.html") {
+  ymaps.ready(mapInit);
+}
 
 window.addEventListener("resize", () => {
   if (window.location.href === "/" || "http://localhost:3000/") {
@@ -21,6 +36,37 @@ window.addEventListener("resize", () => {
 
 burgerButton.addEventListener("click", () => {
   toggleBurger();
+});
+
+if (pageForm) {
+  pageForm.addEventListener("submit", (evt) => {
+    formSubmit(evt);
+    togglePopups(thanksPopup);
+  });
+}
+
+popupForm.addEventListener("submit", (evt) => {
+  formSubmit(evt);
+  togglePopups(callPopup);
+  togglePopups(thanksPopup);
+});
+
+btnOpenCallPopupHeader.addEventListener("click", () => {
+  togglePopups(callPopup);
+});
+
+btnOpenCallPopupBurger.addEventListener("click", () => {
+  togglePopups(callPopup);
+});
+
+if (btnCloseCallPopup) {
+  btnCloseCallPopup.addEventListener("click", () => {
+    togglePopups(callPopup);
+  });
+}
+
+btnCloseThanksPopup.addEventListener("click", () => {
+  togglePopups(thanksPopup);
 });
 
 document.addEventListener("DOMContentLoaded", function () {

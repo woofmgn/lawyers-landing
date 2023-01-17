@@ -1,0 +1,17 @@
+.um-map {
+  
+    &__container {
+        margin: 0 auto;
+        max-width: 1920px;
+        width: 100%;
+        height: 640px;
+
+        @media screen and (max-width: 1023px) {
+          height: 614px;
+        }
+
+        @media screen and (max-width: 767px) {
+          height: 486px;
+        }
+    }
+}
