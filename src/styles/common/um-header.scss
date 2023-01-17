@@ -6,8 +6,7 @@
     z-index: 15;
 
     &__burger-wrapper {
-      // display: none;
-      display: flex;
+      display: none;
       transform: translateY(-100%);
       transition: all .3s ease-in-out;
       margin: 0 auto 0;
@@ -124,6 +123,10 @@
 
 @media screen and (max-width: 1140px) {
   .um-header {
+      &__burger-wrapper {
+        display: flex;
+      }
+
       &__navigation {
           display: none;
 
