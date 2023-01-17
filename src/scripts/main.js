@@ -33,10 +33,12 @@ burgerButton.addEventListener("click", () => {
   toggleBurger();
 });
 
-pageForm.addEventListener("submit", (evt) => {
-  formSubmit(evt);
-  togglePopups(thanksPopup);
-});
+if (pageForm) {
+  pageForm.addEventListener("submit", (evt) => {
+    formSubmit(evt);
+    togglePopups(thanksPopup);
+  });
+}
 
 popupForm.addEventListener("submit", (evt) => {
   formSubmit(evt);
