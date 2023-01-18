@@ -22,27 +22,26 @@ import {
 } from "./modules/toggleQtySwiperSlide.js";
 // import { translateHeader } from "./modules/translateHeader.js";
 
-if (
-  window.location.href === "http://localhost:3000/contacts-page.html" ??
-  "/contacts-page.html"
-) {
+if (window.location.pathname === "/contacts-page.html") {
   ymaps.ready(mapInit);
 }
 
-if (window.location.href === "/" || "http://localhost:3000/") {
+if (window.location.pathname === "/") {
   toggleQtySwiperSlideTeam();
   toggleQtySwiperSlideCertificate();
 }
 
-toggleContent();
+if (window.location.pathname === "/") {
+  toggleContent();
+}
 
-window.addEventListener("resize", () => {
-  // if (window.location.href === "/" || "http://localhost:3000/") {
-  //   toggleQtySwiperSlideTeam();
-  //   toggleQtySwiperSlideCertificate();
-  // }
-  // toggleContent();
-});
+// window.addEventListener("resize", () => {
+//   if (window.location.href === "/" || "http://localhost:3000/") {
+//     toggleQtySwiperSlideTeam();
+//     toggleQtySwiperSlideCertificate();
+//   }
+//   toggleContent();
+// });
 
 burgerButton.addEventListener("click", () => {
   toggleBurger();
