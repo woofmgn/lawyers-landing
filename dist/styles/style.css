@@ -71,6 +71,55 @@
   opacity: 1;
 }
 
+.swiper-button-next::after {
+  content: "none";
+}
+
+.swiper-button-prev::after {
+  content: "none";
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #efb566;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 27px;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+}
+
+.um-team__swiper-btn_type_next {
+  right: 0px;
+}
+
+.um-team__swiper-btn_type_prev {
+  left: 0px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 48%;
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: auto;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
 @font-face {
   font-family: "Geometria";
   src: url("../../fonts/Geometria-Regular.woff") format("woff"),url("../../fonts/Geometria-Regular.woff2") format("woff2");
@@ -1190,7 +1239,7 @@ select {
 
 .um-team__container {
   margin-top: 65px;
-  padding-bottom: 90px;
+  padding-bottom: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1214,7 +1263,7 @@ select {
 }
 
 .um-team__swiper {
-  margin-top: 33px;
+  margin-top: 31px;
 }
 
 .um-team__swiper-btn {
@@ -1240,7 +1289,7 @@ select {
 }
 
 .um-team__swiper-pagination {
-  bottom: 28px;
+  margin-top: 46px;
 }
 
 .um-about-company__container {
@@ -1288,7 +1337,7 @@ select {
 
 .um-sertificate__container {
   margin-top: 65px;
-  padding-bottom: 125px;
+  padding-bottom: 62px;
 }
 
 .um-sertificate__title {
@@ -2131,7 +2180,7 @@ select {
 
   .um-team__container {
     margin-top: 55px;
-    padding-bottom: 96px;
+    padding-bottom: 47px;
   }
 
   .um-team__subtitle {
@@ -2146,11 +2195,11 @@ select {
   .um-team__swiper-btn {
     width: 46px;
     height: 46px;
-    top: 53%;
+    top: 50%;
   }
 
   .um-team__swiper-pagination {
-    bottom: 46px;
+    margin-top: 30px;
   }
 
   .um-about-company__container {
@@ -2192,7 +2241,7 @@ select {
 
   .um-sertificate__container {
     margin-top: 52px;
-    padding-bottom: 99px;
+    padding-bottom: 51px;
   }
 
   .um-sertificate__subtitle {
@@ -2216,12 +2265,13 @@ select {
   }
 
   .um-certificate__swiper-btn {
+    top: 50%;
     width: 46px;
     height: 46px;
   }
 
   .um-certificate__swiper-pagination {
-    margin-top: 30px;
+    margin-top: 32px;
   }
 
   .um-personal__container {
@@ -2611,7 +2661,7 @@ select {
 
   .um-team__container {
     margin-top: 36px;
-    padding-bottom: 70px;
+    padding-bottom: 32px;
   }
 
   .um-team__subtitle {
@@ -2623,7 +2673,7 @@ select {
   }
 
   .um-team__swiper-pagination {
-    bottom: 28px;
+    margin-top: 23px;
   }
 
   .um-team__swiper-btn {
@@ -2631,7 +2681,7 @@ select {
   }
 
   .um-about-company__container {
-    padding-bottom: 42px;
+    padding-bottom: 38px;
   }
 
   .um-about-company__description {
@@ -2652,7 +2702,7 @@ select {
 
   .um-sertificate__container {
     margin-top: 31px;
-    padding-bottom: 68px;
+    padding-bottom: 32px;
   }
 
   .um-sertificate__subtitle {

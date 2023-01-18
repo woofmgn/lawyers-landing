@@ -4,7 +4,7 @@
 
     &__container {
         margin-top: 65px;
-        padding-bottom: 90px;
+        padding-bottom: 29px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,7 +21,7 @@
     }
 
     &__swiper {
-        margin-top: 33px;
+        margin-top: 31px;
     }
 
     &__swiper-btn {
@@ -47,7 +47,7 @@
     }
 
     &__swiper-pagination {
-        bottom: 28px;
+        margin-top: 46px;
     }
 }
 
@@ -56,7 +56,7 @@
 
       &__container {
         margin-top: 55px;
-        padding-bottom: 96px;
+        padding-bottom: 47px;
       }
 
       &__subtitle {
@@ -71,11 +71,11 @@
       &__swiper-btn {
           width: 46px;
           height: 46px;
-          top: 53%
+          top: 50%
       }
 
       &__swiper-pagination {
-          bottom: 46px;
+          margin-top: 30px;
       }
   }
 }
@@ -85,7 +85,7 @@
 
       &__container {
         margin-top: 36px;
-        padding-bottom: 70px;
+        padding-bottom: 32px;
       }
 
       &__subtitle {
@@ -97,7 +97,7 @@
       }
 
       &__swiper-pagination {
-          bottom: 28px;
+          margin-top: 23px;
       }
 
       &__swiper-btn {

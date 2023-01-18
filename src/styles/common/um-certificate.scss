@@ -4,7 +4,7 @@
 
     &__container {
         margin-top: 65px;
-        padding-bottom: 125px;
+        padding-bottom: 62px;
     }
 
     &__title {
@@ -59,7 +59,7 @@
 
         &__container {
             margin-top: 52px;
-            padding-bottom: 99px;
+            padding-bottom: 51px;
         }
     
         &__subtitle {
@@ -84,12 +84,13 @@
     }
     
     .um-certificate__swiper-btn {
+        top: 50%;
         width: 46px;
         height: 46px;
     }
 
     .um-certificate__swiper-pagination {
-        margin-top: 30px;
+        margin-top: 32px;
     }
 }
 
@@ -97,7 +98,7 @@
     .um-sertificate {
         &__container {
             margin-top: 31px;
-            padding-bottom: 68px;
+            padding-bottom: 32px;
         }
 
         &__subtitle {
