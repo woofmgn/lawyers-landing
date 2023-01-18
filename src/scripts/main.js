@@ -26,11 +26,16 @@ if (window.location.href === "http://localhost:3000/contacts-page.html") {
   ymaps.ready(mapInit);
 }
 
+if (window.location.href === "/" || "http://localhost:3000/") {
+  toggleQtySwiperSlideTeam();
+  toggleQtySwiperSlideCertificate();
+}
+
 window.addEventListener("resize", () => {
-  if (window.location.href === "/" || "http://localhost:3000/") {
-    toggleQtySwiperSlideTeam();
-    toggleQtySwiperSlideCertificate();
-  }
+  // if (window.location.href === "/" || "http://localhost:3000/") {
+  //   toggleQtySwiperSlideTeam();
+  //   toggleQtySwiperSlideCertificate();
+  // }
   toggleContent();
 });
 
