@@ -108,7 +108,7 @@ export const toggleQtySwiperSlideCertificate = () => {
   }
 };
 
-if (window.location.pathname === "/") {
+if (window.location.href === "/") {
   const swiperTeam = toggleQtySwiperSlideTeam();
   const swiperCertificate = toggleQtySwiperSlideCertificate();
 

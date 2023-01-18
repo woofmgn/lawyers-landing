@@ -32,11 +32,6 @@ if (window.location.pathname === "/contacts-page.html") {
   ymaps.ready(mapInit);
 }
 
-// if (window.location.pathname === "/") {
-//   toggleQtySwiperSlideTeam();
-//   toggleQtySwiperSlideCertificate();
-// }
-
 // window.addEventListener("resize", () => {
 //   if (window.location.href === "/" || "http://localhost:3000/") {
 //     toggleQtySwiperSlideTeam();
