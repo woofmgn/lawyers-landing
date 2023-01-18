@@ -1,0 +1,59 @@
+.um-not-found {
+    display: block;
+
+    &__container {
+        margin-top: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 1023px) {
+            margin-top: 239px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-top: 137px;
+        }
+    }
+
+    &__title {
+        font-family: $family;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38.2609px;
+        line-height: 125%;
+        color: $white;
+
+        @media screen and (max-width: 1023px) {
+            font-size: 35px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+
+    &__subtitle {
+        font-family: $family;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 187.125px;
+        line-height: 125%;
+        color: $white;
+
+        @media screen and (max-width: 1023px) {
+            font-size: 171.614px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 135px;
+        }
+    }
+
+    &__button {
+        max-width: 230px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

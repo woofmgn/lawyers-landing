@@ -3,11 +3,11 @@
     width: 100%;
 
     &--popup {
-      margin-top: 18px;
+        margin-top: 18px;
 
-      @media screen and (max-width: 767px) {
-        margin-top: 12px;
-      }
+        @media screen and (max-width: 767px) {
+            margin-top: 12px;
+        }
     }
 
     &__input {
@@ -23,7 +23,7 @@
         color: $black;
 
         &::placeholder {
-          opacity: 0.4;
+            opacity: 0.4;
         }
 
         &:last-of-type {
@@ -48,48 +48,48 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .um-form {
+    .um-form {
 
-    &__input {
-        margin-top: 4px;
-        height: 57px;
-        font-size: 15px;
-        line-height: 19px;
+      &__input {
+          margin-top: 4px;
+          height: 57px;
+          font-size: 15px;
+          line-height: 19px;
 
-        &:last-of-type {
-          margin-top: 24px;
-        }
+          &:last-of-type {
+              margin-top: 24px;
+          }
+      }
+
+      &__button-submit {
+          margin-top: 21px;
+      }
+
+      &__accept-terms  {
+          margin-top: 10px;
+      }
     }
-
-    &__button-submit {
-        margin-top: 21px;
-    }
-
-    &__accept-terms  {
-      margin-top: 10px;
-    }
-  }
 }
 
 @media screen and (max-width: 767px) {
-  .um-form {
+    .um-form {
 
-    &__input {
-        height: 51px;
-        font-size: 15px;
-        line-height: 19px;
+      &__input {
+          height: 51px;
+          font-size: 15px;
+          line-height: 19px;
 
-        &:last-of-type {
+          &:last-of-type {
+              margin-top: 15px;
+          }
+      }
+
+      &__button-submit {
           margin-top: 15px;
-        }
-    }
+      }
 
-    &__button-submit {
-        margin-top: 15px;
+      &__accept-terms  {
+          margin-top: 11px;
+      }
     }
-
-    &__accept-terms  {
-      margin-top: 11px;
-    }
-  }
 }
