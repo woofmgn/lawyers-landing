@@ -23,7 +23,7 @@ import {
 // import { translateHeader } from "./modules/translateHeader.js";
 
 if (
-  window.location.href === "http://localhost:3000/contacts-page.html" ||
+  window.location.href === "http://localhost:3000/contacts-page.html" ??
   "/contacts-page.html"
 ) {
   ymaps.ready(mapInit);
