@@ -34,12 +34,14 @@ if (window.location.href === "/" || "http://localhost:3000/") {
   toggleQtySwiperSlideCertificate();
 }
 
+toggleContent();
+
 window.addEventListener("resize", () => {
   // if (window.location.href === "/" || "http://localhost:3000/") {
   //   toggleQtySwiperSlideTeam();
   //   toggleQtySwiperSlideCertificate();
   // }
-  toggleContent();
+  // toggleContent();
 });
 
 burgerButton.addEventListener("click", () => {
