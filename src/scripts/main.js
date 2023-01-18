@@ -22,7 +22,10 @@ import {
 } from "./modules/toggleQtySwiperSlide.js";
 // import { translateHeader } from "./modules/translateHeader.js";
 
-if (window.location.href === "http://localhost:3000/contacts-page.html") {
+if (
+  window.location.href === "http://localhost:3000/contacts-page.html" ??
+  "/contacts-page.html"
+) {
   ymaps.ready(mapInit);
 }
 
