@@ -115,9 +115,3 @@ if (window.location.href === "http://localhost:3000/") {
   swiperTeam.slideNext();
   swiperCertificate.slideNext();
 }
-
-// const swiperTeam = toggleQtySwiperSlideTeam();
-// const swiperCertificate = toggleQtySwiperSlideCertificate();
-
-// swiperTeam.slideNext();
-// swiperCertificate.slideNext();

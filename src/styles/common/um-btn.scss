@@ -44,25 +44,25 @@
         }
     }
 
-@media (hover: hover) {
-  transition: all .3s ease-in-out;
+    @media (hover: hover) {
+        transition: all .3s ease-in-out;
 
-  &:hover, &:active {
-      background-color: $orange;
-      cursor: pointer;
-      color: $black;
-  }
+        &:hover, &:active {
+            background-color: $orange;
+            cursor: pointer;
+            color: $black;
+        }
 
-  &--type-1:hover, &--type-1:active {
-    cursor: pointer;
-    color: $orange;
-    background-color: $black;
-  }
+      &--type-1:hover, &--type-1:active {
+          cursor: pointer;
+          color: $orange;
+          background-color: $black;
+      }
 
-  &--type-3:hover, &--type-3:active {
-    cursor: pointer;
-    color: $orange;
-    background-color: $black;
-  }
-}
+      &--type-3:hover, &--type-3:active {
+          cursor: pointer;
+          color: $orange;
+          background-color: $black;
+      }
+    }
 }

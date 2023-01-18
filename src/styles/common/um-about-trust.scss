@@ -20,15 +20,15 @@
         gap: 21px;
 
         &:nth-child(2) {
-          justify-content: end;
+            justify-content: end;
       }
     }
 
     &__item-icon {
-      max-width: 88px;
-      width: 100%;
-      max-height: 88px;
-      height: 100%px;
+        max-width: 88px;
+        width: 100%;
+        max-height: 88px;
+        height: 100%px;
     }
 
     &__item-title {
@@ -41,68 +41,68 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .um-about-trust {
-      &__container {
-          padding-bottom: 56px;
-      }
-
-      &__items {
-          margin-top: 23px;
-          gap: 50px;
-      }
-
-      &__item {
-          max-width: 184px;
-          gap: 16.04px;
-
-          &:nth-child(2) {
-            justify-content: none;
+    .um-about-trust {
+        &__container {
+            padding-bottom: 56px;
         }
-      }
 
-      &__item-icon {
-        max-width: 56.59px;
-        width: 100%;
-        max-height: 56.59px;
-        height: 56.59px;
-      }
+        &__items {
+            margin-top: 23px;
+            gap: 50px;
+        }
 
-      &__item-title {
-          font-size: 20px;
-      }
-  }
+        &__item {
+            max-width: 184px;
+            gap: 16.04px;
+
+            &:nth-child(2) {
+                justify-content: none;
+          }
+        }
+
+        &__item-icon {
+          max-width: 56.59px;
+          width: 100%;
+          max-height: 56.59px;
+          height: 56.59px;
+        }
+
+        &__item-title {
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .um-about-trust {
-      &__container {
-          padding-bottom: 41px;
-      }
+    .um-about-trust {
+        &__container {
+            padding-bottom: 41px;
+        }
 
-      &__title {
-        max-width: 318px;
-      }
+        &__title {
+          max-width: 318px;
+        }
 
-      &__items {
-          flex-direction: column;
-          gap: 21px;
-      }
+        &__items {
+            flex-direction: column;
+            gap: 21px;
+        }
 
-      &__item {
-          max-width: 167px;
-          gap: 16.58px;
-      }
+        &__item {
+            max-width: 167px;
+            gap: 16.58px;
+        }
 
-      &__item-icon {
-          max-width: 66.84px;
-          width: 100%;
-          max-height: 66.84px;
-          height: 66.84px;
-      }
+        &__item-icon {
+            max-width: 66.84px;
+            width: 100%;
+            max-height: 66.84px;
+            height: 66.84px;
+        }
 
-      &__item-title {
-          font-size: 18px;
-          line-height: 155%;
-      }
-  }
+        &__item-title {
+            font-size: 18px;
+            line-height: 155%;
+        }
+    }
 }

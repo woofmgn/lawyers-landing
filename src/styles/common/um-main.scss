@@ -1,0 +1,20 @@
+.um-main {
+
+    &--not-found {
+        display: block;
+        width: 100%;
+        background-image: url(../../img/not-found/background.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+        @media screen and (max-width: 1023px) {
+            background-image: url(../../img/not-found/background-tablet.png);
+            background-position: top;
+        }
+      
+        @media screen and (max-width: 767px) {
+            background-image: url(../../img/not-found/background-mobile.png);
+        }
+    }
+}

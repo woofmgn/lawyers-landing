@@ -70,107 +70,107 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .um-promo {
+    .um-promo {
 
-      &::after {
-          background: linear-gradient(90deg, #15171C 16.75%, rgba(21, 23, 28, 0.942308) 32.83%, rgba(21, 23, 28, 0.76) 41.71%, rgba(21, 23, 28, 0.15) 63.38%, rgba(21, 23, 28, 0) 75.45%);
-      }
-  }
-}
-
-@media screen and (max-width: 1040px) {
-  .um-promo {
-
-    &::after {
-        background: linear-gradient(90deg, #15171C 16.75%, rgba(21, 23, 28, 0.942308) 16.83%, rgba(21, 23, 28, 0.76) 31.71%, rgba(21, 23, 28, 0.15) 43.38%, rgba(21, 23, 28, 0) 55.45%);
+        &::after {
+            background: linear-gradient(90deg, #15171C 16.75%, rgba(21, 23, 28, 0.942308) 32.83%, rgba(21, 23, 28, 0.76) 41.71%, rgba(21, 23, 28, 0.15) 63.38%, rgba(21, 23, 28, 0) 75.45%);
+        }
     }
-  }
 }
 
 @media screen and (max-width: 1040px) {
-  .um-promo {
+    .um-promo {
+
       &::after {
-          display: none;
+          background: linear-gradient(90deg, #15171C 16.75%, rgba(21, 23, 28, 0.942308) 16.83%, rgba(21, 23, 28, 0.76) 31.71%, rgba(21, 23, 28, 0.15) 43.38%, rgba(21, 23, 28, 0) 55.45%);
       }
-  }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .um-promo {
+        &::after {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .um-promo {
-      background-image: url(../../img/promo/promo-tablet.png);
+    .um-promo {
+        background-image: url(../../img/promo/promo-tablet.png);
 
-      &::before {
-          background: linear-gradient(90deg, #15171C 0%, rgba(21, 23, 28, 0.88) 25.6%, rgba(21, 23, 28, 0.63) 57.17%, rgba(21, 23, 28, 0.23) 77.6%, rgba(21, 23, 28, 0) 96.39%);
-      }
+        &::before {
+            background: linear-gradient(90deg, #15171C 0%, rgba(21, 23, 28, 0.88) 25.6%, rgba(21, 23, 28, 0.63) 57.17%, rgba(21, 23, 28, 0.23) 77.6%, rgba(21, 23, 28, 0) 96.39%);
+        }
 
-      &__container {
-          margin-top: 114px;
-          padding-bottom: 121px;
-      }
+        &__container {
+            margin-top: 114px;
+            padding-bottom: 121px;
+        }
 
-      &__title {
-          margin-top: 22px;
-          max-width: 489px;
-      }
+        &__title {
+            margin-top: 22px;
+            max-width: 489px;
+        }
 
-      &__subtitle {
-          margin-top: 26px;
-          max-width: 450px;
-      }
-  }
+        &__subtitle {
+            margin-top: 26px;
+            max-width: 450px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .um-promo {
-      background-position: -170px;
+    .um-promo {
+        background-position: -170px;
 
-      &__title--desctop {
-          max-width: 307px;
-      }
+        &__title--desctop {
+            max-width: 307px;
+        }
 
-      &__title--mobile {
-          display: block;
-          max-width: 307px;
-      }
+        &__title--mobile {
+            display: block;
+            max-width: 307px;
+        }
 
-      &__subtitle {
-          max-width: 272px;
-      }
-  }
+        &__subtitle {
+            max-width: 272px;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .um-promo {
-      background-position: -240px;
-  }
+    .um-promo {
+        background-position: -240px;
+    }
 }
 
 @media screen and (max-width: 450px) {
-  .um-promo {
-      background-position: -290px;
-  }
+    .um-promo {
+        background-position: -290px;
+    }
 }
 
 @media screen and (max-width: 376px) {
-  .um-promo {
-      background-position: top;
-      background-image: url(../../img/promo/promo-mobile.png);
+    .um-promo {
+        background-position: top;
+        background-image: url(../../img/promo/promo-mobile.png);
 
-      &::before {
-          background: linear-gradient(90deg, #15171C -16.47%, rgba(21, 23, 28, 0.82) 20.18%, rgba(21, 23, 28, 0.48) 45.28%, rgba(21, 23, 28, 0.23) 77.95%, rgba(21, 23, 28, 0) 96.39%);
-      }
+        &::before {
+            background: linear-gradient(90deg, #15171C -16.47%, rgba(21, 23, 28, 0.82) 20.18%, rgba(21, 23, 28, 0.48) 45.28%, rgba(21, 23, 28, 0.23) 77.95%, rgba(21, 23, 28, 0) 96.39%);
+        }
 
-      &__container {
-          margin-top: 56px;
-          padding-bottom: 58px;
-      }
+        &__container {
+            margin-top: 56px;
+            padding-bottom: 58px;
+        }
 
-      &__title {
-          margin-top: 18px;
-      }
+        &__title {
+            margin-top: 18px;
+        }
 
-      &__subtitle {
-          margin-top: 16px;
-      }
-  }
+        &__subtitle {
+            margin-top: 16px;
+        }
+    }
 }

@@ -30,26 +30,26 @@
 @media screen and (max-width: 1023px) {
     .um-advantages-list {
 
-      &__items {
-          margin-top: 23px;
-          gap: 50px;
-      }
+        &__items {
+            margin-top: 23px;
+            gap: 50px;
+        }
 
-      &__item {
-          max-width: 184px;
-          gap: 16.04px;
-      }
+        &__item {
+            max-width: 184px;
+            gap: 16.04px;
+        }
 
-      &__item-icon {
-        max-width: 56.59px;
-        width: 100%;
-        max-height: 56.59px;
-        height: 56.59px;
-      }
+        &__item-icon {
+            max-width: 56.59px;
+            width: 100%;
+            max-height: 56.59px;
+            height: 56.59px;
+        }
 
-      &__item-title {
-          font-size: 20px;
-      }
+        &__item-title {
+            font-size: 20px;
+        }
   }
 }
 

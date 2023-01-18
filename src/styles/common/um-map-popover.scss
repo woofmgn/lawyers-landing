@@ -1,121 +1,121 @@
 .popover {
-  width: 419px;
-  height: 359px;
-  display: flex;
-  flex-direction: column;
-  background-color: #FFF;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.67);
-
-  @media screen and (max-width: 1023px) {
-    width: 397px;
-    height: 351px;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 323px;
-    height: 293px;
-  }
-
-
-  &__close {
-    position: absolute;
-    top: 15px;
-    left: 384px;
+    width: 419px;
+    height: 359px;
     display: flex;
-    align-self: flex-end;
-    width: 20px;
-    height: 20px;
-    background-image: url(../../img/popup/btn-close.svg);
-    background-size: cover;
-
-    &:hover, &:active {
-      transition: all .3s ease-in-out;
-      opacity: .7;
-    }
+    flex-direction: column;
+    background-color: #FFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.67);
 
     @media screen and (max-width: 1023px) {
-      left: 362px;
+        width: 397px;
+        height: 351px;
     }
 
     @media screen and (max-width: 767px) {
-      top: 10px;
-      left: 293px;
-    }
-  }
-
-  &__inner {
-    margin-top: 38px;
-    padding-left: 36px;
-    max-width: 286px;
-
-    @media screen and (max-width: 1023px) {
-      margin-top: 45px;
+        width: 323px;
+        height: 293px;
     }
 
-    @media screen and (max-width: 767px) {
-      padding-left: 45px;
-    }
-  }
 
-  &__title {
-    font-family: $family;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 147.5%;
-    color: $black;
+    &__close {
+        position: absolute;
+        top: 15px;
+        left: 384px;
+        display: flex;
+        align-self: flex-end;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../img/popup/btn-close.svg);
+        background-size: cover;
 
-    @media screen and (max-width: 1023px) {
-      font-size: 20px;
-    }
+        &:hover, &:active {
+            transition: all .3s ease-in-out;
+            opacity: .7;
+        }
 
-    @media screen and (max-width: 767px) {
-      font-size: 18px;
-    }
-  }
+        @media screen and (max-width: 1023px) {
+            left: 362px;
+        }
 
-  &__content {
-    margin-top: 7px;
-    padding-bottom: 20px;
-    font-family: $family;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 180%;
-    color: $black;
-
-    &:last-of-type {
-      padding-bottom: 62px;
+        @media screen and (max-width: 767px) {
+            top: 10px;
+            left: 293px;
+        }
     }
 
-    @media screen and (max-width: 1023px) {
-      margin-top: 8px;
-      padding-bottom: 25px;
-      font-size: 16px;
+    &__inner {
+        margin-top: 38px;
+        padding-left: 36px;
+        max-width: 286px;
 
-      &:last-of-type {
-        padding-bottom: 58px;
-      }
+        @media screen and (max-width: 1023px) {
+            margin-top: 45px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-left: 45px;
+        }
     }
 
-    @media screen and (max-width: 767px) {
-      padding-bottom: 19px;
-      font-size: 14px;
+    &__title {
+        font-family: $family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 147.5%;
+        color: $black;
 
-      &:last-of-type {
-        padding-bottom: 46px;
-      }
+        @media screen and (max-width: 1023px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
     }
-  }
 
-  &__placemark {
-    display: flex;
-    width: 102px;
-    height: 99px;
-    background-image: url(../../img/map/placemark.svg);
-    background-size: cover;
-    position: absolute;
-    top: 315px;
-    left: 150px;
-  }
+    &__content {
+        margin-top: 7px;
+        padding-bottom: 20px;
+        font-family: $family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        color: $black;
+
+        &:last-of-type {
+            padding-bottom: 62px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            margin-top: 8px;
+            padding-bottom: 25px;
+            font-size: 16px;
+
+            &:last-of-type {
+                padding-bottom: 58px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 19px;
+            font-size: 14px;
+
+            &:last-of-type {
+                padding-bottom: 46px;
+            }
+        }
+    }
+
+    &__placemark {
+        display: flex;
+        width: 102px;
+        height: 99px;
+        background-image: url(../../img/map/placemark.svg);
+        background-size: cover;
+        position: absolute;
+        top: 315px;
+        left: 150px;
+    }
 }

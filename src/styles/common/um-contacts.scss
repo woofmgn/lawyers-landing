@@ -1,46 +1,46 @@
 .um-contacts {
 
-  &__container {
-      margin-top: 61px;
-      padding-bottom: 47px;
+    &__container {
+        margin-top: 61px;
+        padding-bottom: 47px;
 
-      @media screen and (max-width: 1023px) {
-          margin-top: 45px;
-          padding-bottom: 35px;
+        @media screen and (max-width: 1023px) {
+            margin-top: 45px;
+            padding-bottom: 35px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            margin-top: 40px;
+            padding-bottom: 46px;
       }
-
-      @media screen and (max-width: 1023px) {
-        margin-top: 40px;
-        padding-bottom: 46px;
     }
-  }
 
-  &__items {
-      display: flex;
-      flex-direction: column;
-      margin-top: 23px;
-      gap: 18px;
+    &__items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 23px;
+        gap: 18px;
 
-      @media screen and (max-width: 1023px) {
-          margin-top: 19px;
-          gap: 19px;
-      }
+        @media screen and (max-width: 1023px) {
+            margin-top: 19px;
+            gap: 19px;
+        }
 
-      @media screen and (max-width: 767px) {
-          margin-top: 28px;
-          gap: 20px
-      }
-  }
+        @media screen and (max-width: 767px) {
+            margin-top: 28px;
+            gap: 20px
+        }
+    }
 
-  &__item {
-      display: flex;
-  }
+    &__item {
+        display: flex;
+    }
 
-  &__item-title {
-      font-weight: bold;
-  }
+    &__item-title {
+        font-weight: bold;
+    }
 
-  &__item-subtitle {
-      padding-left: 4px;
-  }
+    &__item-subtitle {
+        padding-left: 4px;
+    }
 }
