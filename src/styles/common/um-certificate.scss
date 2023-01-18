@@ -1,8 +1,9 @@
 .um-sertificate {
     background-color: $white;
+    overflow: hidden;
 
     &__container {
-        padding-top: 65px;
+        margin-top: 65px;
         padding-bottom: 125px;
     }
 
@@ -57,7 +58,7 @@
     .um-sertificate {
 
         &__container {
-            padding-top: 52px;
+            margin-top: 52px;
             padding-bottom: 37px;
         }
     
@@ -95,7 +96,7 @@
 @media screen and (max-width: 767px) {
     .um-sertificate {
         &__container {
-            padding-top: 31px;
+            margin-top: 31px;
             padding-bottom: 52.5px;
         }
 
