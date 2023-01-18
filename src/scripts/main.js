@@ -29,14 +29,11 @@ if (window.location.pathname === "/contacts-page.html") {
 if (window.location.pathname === "/") {
   toggleQtySwiperSlideTeam();
   toggleQtySwiperSlideCertificate();
-}
-
-if (window.location.pathname === "/") {
   toggleContent();
 }
 
 // window.addEventListener("resize", () => {
-//   if (window.location.href === "/" || "http://localhost:3000/") {
+//   if (window.location.pathname === "/") {
 //     toggleQtySwiperSlideTeam();
 //     toggleQtySwiperSlideCertificate();
 //   }
