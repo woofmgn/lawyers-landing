@@ -22,6 +22,8 @@ import {
 } from "./modules/toggleQtySwiperSlide.js";
 // import { translateHeader } from "./modules/translateHeader.js";
 
+toggleContent();
+
 if (
   window.location.href === "http://localhost:3000/contacts-page.html" ??
   "/contacts-page.html"
@@ -39,7 +41,7 @@ window.addEventListener("resize", () => {
   //   toggleQtySwiperSlideTeam();
   //   toggleQtySwiperSlideCertificate();
   // }
-  toggleContent();
+  // toggleContent();
 });
 
 burgerButton.addEventListener("click", () => {
