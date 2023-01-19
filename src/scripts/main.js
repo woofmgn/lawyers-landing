@@ -22,18 +22,18 @@ import {
 } from "./modules/toggleQtySwiperSlide.js";
 // import { translateHeader } from "./modules/translateHeader.js";
 
+if (window.location.pathname === "/") {
+  toggleContent();
+  toggleQtySwiperSlideTeam();
+  toggleQtySwiperSlideCertificate();
+}
+
 if (window.location.pathname === "/contacts-page.html") {
   ymaps.ready(mapInit);
 }
 
-if (window.location.pathname === "/") {
-  toggleQtySwiperSlideTeam();
-  toggleQtySwiperSlideCertificate();
-  toggleContent();
-}
-
 // window.addEventListener("resize", () => {
-//   if (window.location.pathname === "/") {
+//   if (window.location.href === "/" || "http://localhost:3000/") {
 //     toggleQtySwiperSlideTeam();
 //     toggleQtySwiperSlideCertificate();
 //   }

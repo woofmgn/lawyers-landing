@@ -58,8 +58,15 @@
   content: 'none';
 }
 
+.swiper-pagination-bullet {
+  background: #EFB566;
+  opacity: 0.3;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .swiper-pagination-bullet-active {
   background-color: #EFB566;
+  opacity: 1;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
