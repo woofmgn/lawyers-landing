@@ -14,5 +14,5 @@ reports/
 **/version.json
 
 # Папка с собранными файлами проекта
-# build/
-# dist/
+build/
+dist/

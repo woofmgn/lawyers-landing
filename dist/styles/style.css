@@ -557,8 +557,6 @@ select {
           justify-content: space-between;
   padding: 14px auto 15px;
   background-color: #15171c;
-  -webkit-box-shadow: 0px 0px 20px #000;
-          box-shadow: 0px 0px 20px #000;
   position: relative;
   z-index: 15;
 }
