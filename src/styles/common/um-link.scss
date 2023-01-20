@@ -15,4 +15,9 @@
             color: $black;
         }
     }
+
+  &.is-active {
+    transition: none;
+    color: $orange;
+  }
 }

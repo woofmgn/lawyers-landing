@@ -1,11 +1,30 @@
 .um-header {
     position: fixed;
+    width: 100vw;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 15;
     background-color: $black;
     box-shadow: 0px 0px 20px #000000;
+
+    &__burger-container {
+      z-index: 13;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(21, 23, 28, 0.5);
+      backdrop-filter: blur(5px);
+      pointer-events: none;
+      opacity: 0;
+      transition: $defaultTransition;
+
+      &--is-active {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
 
     &__burger-wrapper {
         display: none;
@@ -32,7 +51,6 @@
         height: 72px;
         display: flex;
         justify-content: space-between;
-        padding: 14px auto 15px;
         background-color: $black;
         position: relative;
         z-index: 15;
