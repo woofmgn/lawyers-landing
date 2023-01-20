@@ -1649,6 +1649,26 @@ select {
   pointer-events: all;
 }
 
+.um-overflow {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(21,23,28,.5);
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.um-overflow.is-visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .um-popup {
   position: fixed;
   max-height: 100vh;
@@ -1765,28 +1785,6 @@ select {
   position: absolute;
   top: 25px;
   right: 25px;
-}
-
-.um-overflow {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,.2);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  pointer-events: none;
-  opacity: 0;
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.um-overflow.is-visible {
-  opacity: 1;
-  pointer-events: all;
 }
 
 @media screen and (max-width: 1280px) {

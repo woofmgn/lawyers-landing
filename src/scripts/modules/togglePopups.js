@@ -1,3 +1,4 @@
+const overflow = document.querySelector(".js-overflow");
 const thanksPopup = document.querySelector(".js-popup-thanks");
 const callPopup = document.querySelector(".js-popup-call");
 const btnCloseCallPopup = callPopup.querySelector(".js-close-btn");
@@ -7,6 +8,7 @@ const btnOpenCallPopupBurger = document.querySelector(".js-burger-call-btn");
 
 const togglePopups = (popup) => {
   popup.classList.toggle("is-visible");
+  overflow.classList.toggle("is-visible");
 };
 
 export {
