@@ -1,6 +1,10 @@
 import { formSubmit, pageForm, popupForm } from "./modules/formSubmit.js";
 import { mapInit } from "./modules/geoMap.js";
-import { burgerButton, toggleBurger } from "./modules/toggleBurger.js";
+import {
+  burgerButton,
+  burgerOverlay,
+  toggleBurger,
+} from "./modules/toggleBurger.js";
 import { toggleContent } from "./modules/toggleContent.js";
 import {
   btnCloseCallPopup,
@@ -8,6 +12,8 @@ import {
   btnOpenCallPopupBurger,
   btnOpenCallPopupHeader,
   callPopup,
+  closePopupClickOverlay,
+  overflow,
   thanksPopup,
   togglePopups,
 } from "./modules/togglePopups.js";
@@ -59,4 +65,13 @@ if (btnCloseCallPopup) {
 
 btnCloseThanksPopup.addEventListener("click", () => {
   togglePopups(thanksPopup);
+});
+
+overflow.addEventListener("click", () => {
+  closePopupClickOverlay(callPopup);
+  closePopupClickOverlay(thanksPopup);
+});
+
+burgerOverlay.addEventListener("click", () => {
+  toggleBurger();
 });

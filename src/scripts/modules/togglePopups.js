@@ -19,7 +19,17 @@ const togglePopups = (popup) => {
   overflow.classList.toggle("is-visible");
 };
 
+const closePopupClickOverlay = (popup) => {
+  if (
+    overflow.classList.contains("is-visible") &&
+    popup.classList.contains("is-visible")
+  ) {
+    togglePopups(popup);
+  }
+};
+
 export {
+  overflow,
   thanksPopup,
   callPopup,
   btnCloseCallPopup,
@@ -27,4 +37,5 @@ export {
   btnOpenCallPopupHeader,
   btnOpenCallPopupBurger,
   togglePopups,
+  closePopupClickOverlay,
 };
