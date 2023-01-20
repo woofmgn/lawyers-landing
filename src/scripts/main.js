@@ -6,6 +6,7 @@ import {
   toggleBurger,
 } from "./modules/toggleBurger.js";
 import { toggleContent } from "./modules/toggleContent.js";
+import { toggleColorLink } from "./modules/togglePageLink.js";
 import {
   btnCloseCallPopup,
   btnCloseThanksPopup,
@@ -21,6 +22,8 @@ import {
   toggleQtySwiperSlideCertificate,
   toggleQtySwiperSlideTeam,
 } from "./modules/toggleQtySwiperSlide.js";
+
+toggleColorLink();
 
 if (window.location.pathname === "/") {
   toggleContent();

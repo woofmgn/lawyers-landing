@@ -188,4 +188,5 @@ export function mapInit() {
     ));
 
   myMap.geoObjects.add(myPlacemark);
+  myMap.behaviors.disable("scrollZoom");
 }

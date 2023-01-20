@@ -454,6 +454,13 @@ select {
   color: #efb566;
 }
 
+.um-link.is-active {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  color: #efb566;
+}
+
 .um-main--not-found {
   display: block;
   width: 100%;
@@ -505,9 +512,9 @@ select {
 
 .um-header {
   position: fixed;
+  width: 100vw;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 15;
   background-color: #15171c;
   -webkit-box-shadow: 0px 0px 20px #000;
@@ -576,7 +583,6 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 14px auto 15px;
   background-color: #15171c;
   position: relative;
   z-index: 15;
@@ -854,17 +860,14 @@ select {
 
 .um-banner--bankruptcy {
   max-height: 576px;
-  background-image: url(../../img/banner/banner-bankruptcypng.png);
 }
 
 .um-banner--mediation {
   max-height: 576px;
-  background-image: url(../../img/banner/banner-mediation--pc.png);
 }
 
 .um-banner--tax-disputs {
   max-height: 576px;
-  background-image: url(../../img/banner/banner-tax-disputs.png);
 }
 
 .um-banner__container {
