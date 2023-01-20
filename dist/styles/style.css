@@ -245,7 +245,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
 }
 
 main {
@@ -505,7 +504,7 @@ select {
 }
 
 .um-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -723,6 +722,7 @@ select {
 }
 
 .um-promo {
+  margin-top: 72px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,8 +809,8 @@ select {
 }
 
 .um-banner {
+  margin-top: 72px;
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1240,11 +1240,6 @@ select {
   line-height: 20px;
   text-align: center;
   color: #15171c;
-}
-
-.um-team {
-  position: relative;
-  height: 100%;
 }
 
 .um-team__container {
@@ -2507,6 +2502,14 @@ select {
     min-width: 50px;
     width: 100%;
     height: 29px;
+  }
+
+  .um-promo {
+    margin-top: 51px;
+  }
+
+  .um-banner {
+    margin-top: 51px;
   }
 
   .um-banner--bankruptcy {
