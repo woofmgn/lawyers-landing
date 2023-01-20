@@ -1,4 +1,5 @@
 .um-promo {
+    margin-top: 72px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -7,6 +8,10 @@
     background-position: top;
     position: relative;
     z-index: 1;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 51px;
+    }
 
     &::before {
         content: " ";
