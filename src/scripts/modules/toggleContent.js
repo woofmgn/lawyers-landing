@@ -30,17 +30,21 @@ const checkLocation = () => {
     return bannerMediation;
   } else if (location === "/tax-disputs.html") {
     return bannerTaxDisputs;
+  } else {
+    return;
   }
 };
 
 export const toggleBannerBackground = () => {
   const isBanner = checkLocation();
 
-  if (window.innerWidth > 1023) {
-    isBanner.style = isBanner.dataset.imgDesctop;
-  } else if (window.innerWidth <= 1023 && window.innerWidth > 767) {
-    isBanner.style = isBanner.dataset.imgTablet;
-  } else if (window.innerWidth <= 767) {
-    isBanner.style = isBanner.dataset.imgMobile;
+  if (isBanner) {
+    if (window.innerWidth > 1023) {
+      isBanner.style = isBanner.dataset.imgDesctop;
+    } else if (window.innerWidth <= 1023 && window.innerWidth > 767) {
+      isBanner.style = isBanner.dataset.imgTablet;
+    } else if (window.innerWidth <= 767) {
+      isBanner.style = isBanner.dataset.imgMobile;
+    }
   }
 };
