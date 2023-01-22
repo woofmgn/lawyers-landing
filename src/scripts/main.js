@@ -6,7 +6,10 @@ import {
   burgerOverlay,
   toggleBurger,
 } from "./modules/toggleBurger.js";
-import { toggleContent } from "./modules/toggleContent.js";
+import {
+  toggleBannerBackground,
+  toggleContent,
+} from "./modules/toggleContent.js";
 import { toggleColorLink } from "./modules/togglePageLink.js";
 import {
   btnCloseCallPopup,
@@ -24,19 +27,25 @@ import {
   toggleQtySwiperSlideTeam,
 } from "./modules/toggleQtySwiperSlide.js";
 
+const location = window.location.pathname;
+
 // изменение цвета ссылок страниц
 toggleColorLink();
 
 // подключение масок телефона в инпутах
 initMask();
 
-if (window.location.pathname === "/") {
+if (location !== "/" && location !== "/contacts-page.html") {
+  toggleBannerBackground();
+}
+
+if (location === "/") {
   toggleContent();
   toggleQtySwiperSlideTeam();
   toggleQtySwiperSlideCertificate();
 }
 
-if (window.location.pathname === "/contacts-page.html") {
+if (location === "/contacts-page.html") {
   ymaps.ready(mapInit);
 }
 
