@@ -18,6 +18,8 @@ export const toggleColorLink = () => {
     currentLink = mediationPage;
   } else if (location === "/contacts-page.html") {
     currentLink = contactsPape;
+  } else {
+    return;
   }
 
   currentLink.forEach((item) => {
