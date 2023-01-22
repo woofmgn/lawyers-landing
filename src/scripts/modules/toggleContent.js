@@ -7,11 +7,11 @@ export const toggleContent = () => {
     aboutImgSelector.src = aboutImgSelector.dataset.imageDesctop;
     promoTitle.textContent = promoTitle.dataset.textDesctop;
     certificateSubtitle.textContent = certificateSubtitle.dataset.textPc;
-  } else if (window.innerWidth <= 1023 && window.innerWidth > 400) {
+  } else if (window.innerWidth <= 1023 && window.innerWidth > 767) {
     aboutImgSelector.src = aboutImgSelector.dataset.imageTablet;
     promoTitle.textContent = promoTitle.dataset.textDesctop;
     certificateSubtitle.textContent = certificateSubtitle.dataset.textTablet;
-  } else if (window.innerWidth <= 400) {
+  } else if (window.innerWidth <= 767) {
     aboutImgSelector.src = aboutImgSelector.dataset.imageDesctop;
     promoTitle.textContent = promoTitle.dataset.textMobile;
     certificateSubtitle.textContent = certificateSubtitle.dataset.textTablet;

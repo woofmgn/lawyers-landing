@@ -4,5 +4,6 @@
 // А так же записываем нужные переменные в глобальную область видимости, так как тут локальная
 // EXAMPLE: window.$ = window.jQuery = jQuery;
 
+import IMask from "imask";
 import Swiper from "swiper/bundle";
-export { Swiper };
+export { Swiper, IMask };

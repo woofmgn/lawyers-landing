@@ -1,5 +1,6 @@
 import { formSubmit, pageForm, popupForm } from "./modules/formSubmit.js";
 import { mapInit } from "./modules/geoMap.js";
+import { initMask } from "./modules/telephoneMask.js";
 import {
   burgerButton,
   burgerOverlay,
@@ -23,7 +24,11 @@ import {
   toggleQtySwiperSlideTeam,
 } from "./modules/toggleQtySwiperSlide.js";
 
+// изменение цвета ссылок страниц
 toggleColorLink();
+
+// подключение масок телефона в инпутах
+initMask();
 
 if (window.location.pathname === "/") {
   toggleContent();
