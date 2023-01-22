@@ -15,7 +15,7 @@
       bottom: 0;
       left: 0;
       background: rgba(21, 23, 28, 0.5);
-      backdrop-filter: blur(5px);
+      // backdrop-filter: blur(5px);
       pointer-events: none;
       opacity: 0;
       transition: $defaultTransition;
@@ -98,12 +98,6 @@
         line-height: 18px;
         text-align: right;
         color: $white;
-
-        &_type_link {
-            &:hover, &:active {
-                color: $orange;
-            }
-        }
     }
 
     &__button {
@@ -191,7 +185,7 @@
             display: none;
 
             &--burger {
-                margin-top: 50px;
+                margin-top: 47px;
                 display: flex;
                 flex-direction: column;
             }
@@ -206,6 +200,11 @@
                 order: 1;
                 justify-content: space-between;
             }
+        }
+
+        &__contacts {
+          font-size: 16px;
+          line-height: 20px;
         }
 
         &__burger-button {
@@ -272,7 +271,7 @@
       &__contacts-wrapper {
 
           &--burger {
-              margin-top: 40px;
+              margin-top: 44px;
           }
       }
 
@@ -289,6 +288,11 @@
           &--burger {
               margin-top: 29px;
           }
+      }
+
+      &__contacts {
+        font-size: 14px;
+        line-height: 18px;
       }
     }
 }

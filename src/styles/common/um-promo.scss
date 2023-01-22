@@ -100,9 +100,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     .um-promo {
-        background-image: url(../../img/promo/promo-tablet.png);
 
         &::before {
             background: linear-gradient(90deg, #15171C 0%, rgba(21, 23, 28, 0.88) 25.6%, rgba(21, 23, 28, 0.63) 57.17%, rgba(21, 23, 28, 0.23) 77.6%, rgba(21, 23, 28, 0) 96.39%);
@@ -125,9 +124,10 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .um-promo {
-        background-position: -170px;
+        background-image: url(../../img/promo/promo-tablet.png);
+        background-position: 100% 0;
 
         &__title--desctop {
             max-width: 307px;
@@ -144,22 +144,11 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .um-promo {
-        background-position: -240px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .um-promo {
-        background-position: -290px;
-    }
-}
-
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 480px) {
     .um-promo {
         background-position: top;
         background-image: url(../../img/promo/promo-mobile.png);
+        background-size: cover;
 
         &::before {
             background: linear-gradient(90deg, #15171C -16.47%, rgba(21, 23, 28, 0.82) 20.18%, rgba(21, 23, 28, 0.48) 45.28%, rgba(21, 23, 28, 0.23) 77.95%, rgba(21, 23, 28, 0) 96.39%);
