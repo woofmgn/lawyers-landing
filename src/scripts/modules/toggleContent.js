@@ -30,8 +30,6 @@ const checkLocation = () => {
     return bannerMediation;
   } else if (location === "/tax-disputs.html") {
     return bannerTaxDisputs;
-  } else {
-    return;
   }
 };
 
